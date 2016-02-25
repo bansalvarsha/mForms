@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="43562" started-at="2016-02-25T13:07:59Z" finished-at="2016-02-25T13:08:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="43562" started-at="2016-02-25T13:07:59Z" finished-at="2016-02-25T13:08:43Z">
+      <class name="rc25.mFormsAutomation.Testcases.TC001_Registration">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC001_Registration@ce8af7]" name="BeforeMethod" is-config="true" duration-ms="13825" started-at="2016-02-25T18:37:59Z" finished-at="2016-02-25T18:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="main()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC001_Registration@ce8af7]" name="main" duration-ms="27827" started-at="2016-02-25T18:38:13Z" finished-at="2016-02-25T18:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC001_Registration@ce8af7]" name="afterMethod" is-config="true" duration-ms="1888" started-at="2016-02-25T18:38:41Z" finished-at="2016-02-25T18:38:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- rc25.mFormsAutomation.Testcases.TC001_Registration -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

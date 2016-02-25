@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="mForms" >
+  <test name="TestCasesExecution">
+    <classes>
+      <class name="rc25.mFormsAutomation.Testcases.TC001_Registration"/>
+      <class name="rc25.mFormsAutomation.Testcases.TC002_Login"/>
+     
+      <class name="rc25.mFormsAutomation.Testcases.TC003_ForgotPassword"/>
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC004_CreateBlankForm"/> -->
+      
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC005_CreateFormWithDisplayControls"/> -->
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC006_AddTheme"/> -->
+     
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC007_ViewTheme"/> -->
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC008_EditTheme"/> -->
+      
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC009_DeleteTheme"/> -->
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC010_CreateFormWithTextareaAndTextbox"/> -->
+       
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC011_CreateFormItems"/> -->
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC012_CreateInputType"/> -->
+      
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC013_CreateInputOptions"/> -->
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC014_AddResponse"/> -->
+      
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC015_AddUser"/> -->
+    </classes>
+  </test> <!-- TestCasesExecution -->
+</suite> <!-- mForms -->
