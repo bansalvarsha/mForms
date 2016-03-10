@@ -19,7 +19,7 @@ import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
 import rc25.mFormsAutomation.utility.Utils;
 
-public class TC005_CreateFormWithDisplayControls {
+public class TC0016_CreateFormWithDisplayControls {
 	private String sTestCaseName;
 	public WebDriver driver;
 	//private ExtentReports extent= ExtentReports.get(sTestCaseName);

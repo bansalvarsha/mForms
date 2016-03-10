@@ -2,6 +2,7 @@ package rc25.mFormsAutomation.OR_Library;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +29,20 @@ public class CreateLibrary_objects {
 		private WebElement libraryName;
 		public WebElement getlibraryName() {
 			return libraryName;
+			}
+		
+		@FindBy(how= How.ID, using= "FormList")
+		private WebElement FormList;
+		public WebElement getFormList(){
+			return FormList;
+		}
+		
+		@FindAll({
+			@FindBy(how= How.CLASS_NAME, using= "note")
+		})
+			private List<WebElement> AllForms;
+			public List<WebElement> getAllForms(){
+				return AllForms;
 			}
 		
 		@FindBy(how = How.XPATH, using = "//a[contains(text(),'Blank form')]") 

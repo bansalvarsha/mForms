@@ -16,7 +16,7 @@ import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
 import rc25.mFormsAutomation.utility.Utils;
 
-public class TC006_AddTheme {
+public class TC0017_AddTheme {
 	private String sTestCaseName;
 	public WebDriver driver;
 	//private ExtentReports extent= ExtentReports.get(sTestCaseName);

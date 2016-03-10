@@ -22,6 +22,7 @@ public class Logout_Action extends BaseClass {
 		logoutObject= PageFactory.initElements(driver, Logout_objects.class);
 		//This is to click on logout menu icon to find the logout option
 		element= logoutObject.getlogout_icon();
+		Thread.sleep(5000);
 		Utils.waitForElementOnvisibilityOf(element);
 		element.click();
 	

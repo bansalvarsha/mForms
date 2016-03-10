@@ -22,6 +22,7 @@ public class AddItemsInForms_Action extends CreateForm_Action{
 		//Create object for page factory AddItems_objects.java file
 		AddItems_objects AddItemsObj= PageFactory.initElements(driver, AddItems_objects.class);
 		
+		Thread.sleep(5000);
 		AddItemsObj.getAddItemBtn().click();
 		AddItemsObj.getAddNewItem().click();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

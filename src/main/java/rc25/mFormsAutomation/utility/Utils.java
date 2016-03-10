@@ -5,10 +5,13 @@ Copyright 2015
 -----------------------------------------------------------------------------------------------------------------------*/
 package rc25.mFormsAutomation.utility;
 
+import java.awt.AWTException;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +23,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import rc25.mFormsAutomation.OR_Library.AddItems_objects;
 import rc25.mFormsAutomation.OR_Library.SaveAndverifyTheForm_objects;
 
 public class Utils {
@@ -106,5 +110,18 @@ public class Utils {
 			 System.out.println(getConfirmtionMessage);
 		 }
 	}
-		
+	
+	
+	//Scroll the page
+	public static void Scroll_Down_Page() throws AWTException, InterruptedException {
+		JavascriptExecutor je = (JavascriptExecutor) driver;  
+		je.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.xpath("//input[@id='addItemInputBtn_1']")));
+	}
+	
+	public static void Scroll_Down_To_InputType(int row){
+		AddItems_objects.mRow= row;
+		JavascriptExecutor je = (JavascriptExecutor) driver;  
+		je.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.xpath(AddItems_objects.getAddItemName())));
+	
+	}
 }

@@ -12,6 +12,7 @@ import rc25.mFormsAutomation.Actions_Library.AddInputTypesInForms_Action;
 import rc25.mFormsAutomation.Actions_Library.AddItemsInForms_Action;
 import rc25.mFormsAutomation.Actions_Library.CreateForm_Action;
 import rc25.mFormsAutomation.Actions_Library.SaveAndverifyTheForm_Action;
+import rc25.mFormsAutomation.Actions_Library.VerifyFormData_Action;
 import rc25.mFormsAutomation.Base.BaseClass;
 import rc25.mFormsAutomation.Base.ExcelPaths;
 import rc25.mFormsAutomation.utility.Constant;
@@ -34,7 +35,7 @@ public class TC004_CreateBlankForm {
 		
 		driver= Utils.OpenBrowser();
 		new BaseClass(driver);
-	//	extent.init(Constant.ReportsLocation, false);
+		//	extent.init(Constant.ReportsLocation, false);
 	}
 	
 	@Test
@@ -45,7 +46,7 @@ public class TC004_CreateBlankForm {
 			ExcelUtils.setExcelFile(ExcelPaths.excelfileForCreateForm, Constant.loginSheetName);
 			int Row= 1;
 			Login_Action.Login_steps(Row);
-			
+			Thread.sleep(5000);
 			CreateForm_Action.BlankForm();
 			CreateForm_Action.fillBlankForm(Row);
 			
@@ -136,6 +137,7 @@ public class TC004_CreateBlankForm {
 			}
 			ExcelUtils.setExcelFile(ExcelPaths.excelfileForCreateForm, Constant.loginSheetName);
 			SaveAndverifyTheForm_Action.SaveAndVerify(Row);
+			VerifyFormData_Action.verifyCreatedFormData();
 		//	extent.log(LogStatus.PASS, "Details");
 		}catch(Exception e){
 			Utils.takeScreenshot(driver, sTestCaseName);
@@ -153,4 +155,5 @@ public class TC004_CreateBlankForm {
 		driver.quit();
 		//extent.endTest();
 	}
+	
 }	

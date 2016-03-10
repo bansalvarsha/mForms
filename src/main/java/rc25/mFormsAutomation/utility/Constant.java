@@ -15,7 +15,8 @@ public class Constant {
 	
 	//Excel Sheet names
 	public static final String loginSheetName= "Login";
-	public static final String SheetNameForItemDesc= "Sheet2";
+	public static final String SheetNameForItemDesc= "CreateForm";
+	public static final String SheetNameForItemEdition= "EditForm";
 	public static final String SheetNameForInputTypeDesc= "Sheet2";
 	public static final String SheetNameForIO= "Sheet2";
 	public static final String FormItemsSheet2= "Sheet2";

@@ -36,6 +36,8 @@ public class CreateForm_Action extends BaseClass{
 
 	//Created a object of CreateLibrary_objects.java class to use it's variables
 	static CreateLibrary_objects CreateLibObj; 
+	static int TotalFormsCount;
+	static String getFormNameValue;
 
 	//Method to open the form 
 	public static void BlankForm() throws InterruptedException {
@@ -52,6 +54,12 @@ public class CreateForm_Action extends BaseClass{
 	    
 	    CreateLibObj.getForms_inLibraryMenu().click();
 	    Log.info("Clicked on Forms in library menu");
+	    
+	    //let's find out the total number of forms available in form list
+	    if( CreateLibObj.getFormList().isDisplayed()){
+	    	TotalFormsCount= CreateLibObj.getAllForms().size();
+	    	System.out.println("Total number of forms are " + TotalFormsCount);
+	    }
 	    
 	    try {
 			Thread.sleep(5000);
@@ -89,10 +97,14 @@ public class CreateForm_Action extends BaseClass{
 		try {
 			Thread.sleep(1000);
 			ActFormName = ExcelUtils.getCellData(row, Constant.Col_FormName);
+			getFormNameValue= CreateLibObj.getForm_Name().getAttribute("value");
+			
+			CreateLibObj.getForm_Name().clear();
 			CreateLibObj.getForm_Name().sendKeys(ActFormName);
 			Log.info("Form title: " + ActFormName + " is entered.");
 			
 			ActFormDisc= ExcelUtils.getCellData(row, Constant.Col_FormDescription);
+			CreateLibObj.getForm_desc().clear();
 			CreateLibObj.getForm_desc().sendKeys(ActFormDisc);
 			Log.info("Form description:" + ActFormDisc + " is entered");
 		} catch (Exception e) {

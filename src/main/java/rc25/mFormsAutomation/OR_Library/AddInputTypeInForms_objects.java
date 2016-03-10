@@ -36,11 +36,11 @@ public class AddInputTypeInForms_objects {
 		}
 		
 		public static String getRequiredForDiplayControls(){
-			return "//div[@id='divSort_"+ mRow +"']//div[@class='input_control_right']//div[@class='input_control_area input_type_merge']/div/div[1]/div/div[1]/span";
+			return "//div[@id='divSort_"+ mRow +"']//div[@class='input_control_right']//div[@class='input_control_area input_type_merge']/div/div[1]/div/div[3]/span";
 		}
 		
 		public static String getOpenCommLocForDiplayControls(){
-			return "//div[@id='divSort_"+ mRow +"']//div[@class='input_control_right']//div[@class='input_control_area input_type_merge']/div/div[1]/div/div[2]/span";
+			return "//div[@id='divSort_"+ mRow +"']//div[@class='input_control_right']//div[@class='input_control_area input_type_merge']/div/div[1]/div/div[4]/span";
 		}
 		
 		public static String getInputOption1Loc(){
@@ -48,7 +48,7 @@ public class AddInputTypeInForms_objects {
 		}
 		
 		public static String CaptionOfButtonLocForMap(){
-			return "//div[@id='divSort_"+ mRow +"']//div[@class='input_control_area']/div/div/div/div[3]/span/input";
+			return "//div[@id='divSort_"+ mRow +"']//div[@class='input_control_area']/div/div/div/div/span/input";
 		}
 		
 		public static String getMatrixMultiSelect_TextareaOption(){
@@ -74,6 +74,76 @@ public class AddInputTypeInForms_objects {
 		public static String getInputOptionLoc(){
 			return "//div[@id='divSort_" + mRow + "']//textarea[@name='Option']"; 
 		}
+		
+		////////////////////////////////////////////////////////////////////////////////////
+		//Form edit objects
+		
+		public static String getEditButton2(){
+		return "//div[@id='divSort_" + mRow + "']//div[@class='input_control_area input_type_merge']//input[@name='Caption']";	
+		}
+		
+		public static String getEditButtonCaption(){
+			return "//*[@id='librarybodyareaCount_"+ mRow +"']/div[2]/div/div/div/div/div[1]/div/div[4]/span/input"; 
+		}
+		
+		public static String getEditButton2Caption() {
+			return "//div[@id='divSort_"+ mRow +"']//div[5]/span/input";
+		}
+		
+		public static String getEditMapButtonCaption() {
+			return "//div[@id='divSort_" + mRow + "']//div[@class='input_control_area']/div/div/div/div/div/div/span/input";
+		}
+		
+		@FindBy(how= How.CSS, using = "input[class=cancel_head_btn]")
+		private WebElement Cancel_Btn;
+		public WebElement getCancel_btn(){
+			return Cancel_Btn;
+		}
+		
+		@FindBy(how= How.CSS, using = "#RatingInputType>option[selected='selected']")
+		private WebElement RatingType;
+		public WebElement getRatingType(){
+			return RatingType;
+		}
+		
+		@FindBy(how= How.CSS, using = "#AttachCount>option[selected='selected']")
+		private WebElement AttachCount;
+		public WebElement getAttachCount(){
+			return AttachCount;
+		}
+		
+		@FindBy(how= How.CSS, using = "#VideoCount>option[selected='selected']")
+		private WebElement SelectedVideoCount;
+		public WebElement getSelectedVideoCount(){
+			return SelectedVideoCount;
+		}
+		
+		@FindBy(how= How.CSS, using = "#MediaSize>option[selected='selected']")
+		private WebElement SelectedVideoSize;
+		public WebElement getSelectedVideoSize(){
+			return SelectedVideoSize;
+		}
+		
+		@FindBy(how= How.CSS, using = "#ImageCount>option[selected='selected']")
+		private WebElement SelectedImageCount;
+		public WebElement getSelectedImageCount(){
+			return SelectedImageCount;
+		}
+		
+		@FindBy(how= How.CSS, using = "#MediaSize>option[selected='selected']")
+		private WebElement SelectedAudioSize;
+		public WebElement getSelectedAudioSize(){
+			return SelectedAudioSize;
+		}
+		
+		@FindBy(how= How.CSS, using = "#AudioCount>option[selected='selected']")
+		private WebElement SelectedAudioCount;
+		public WebElement getSelectedAudioCount(){
+			return SelectedAudioCount;
+		}
+		
+		
+		/////////////////////////////////////////////////////////////////////////////////////
 		
 		@FindBy(how = How.XPATH, using = "//div[@class='jquery-gdakram-tooltip']//tr[@id='8']") 
 		private WebElement InputItem_Attachment;
