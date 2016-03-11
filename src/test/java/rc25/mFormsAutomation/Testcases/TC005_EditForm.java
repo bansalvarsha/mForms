@@ -1,16 +1,15 @@
 package rc25.mFormsAutomation.Testcases;
 
-import org.testng.annotations.Test;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-import rc25.mFormsAutomation.Actions_Home.Login_Action;
 import rc25.mFormsAutomation.Actions_Home.Logout_Action;
 import rc25.mFormsAutomation.Actions_Library.AddInputTypesInForms_Action;
-import rc25.mFormsAutomation.Actions_Library.AddItemsInForms_Action;
 import rc25.mFormsAutomation.Actions_Library.CreateForm_Action;
+import rc25.mFormsAutomation.Actions_Library.EditForm_Action;
 import rc25.mFormsAutomation.Actions_Library.SaveAndverifyTheForm_Action;
 import rc25.mFormsAutomation.Actions_Library.VerifyFormData_Action;
 import rc25.mFormsAutomation.Base.BaseClass;
@@ -20,44 +19,41 @@ import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
 import rc25.mFormsAutomation.utility.Utils;
 
-public class TC004_CreateBlankForm {
-	private static String sTestCaseName;
-	public static WebDriver driver;
-	public static int mCol;
-	//private ExtentReports extent= ExtentReports.get(sTestCaseName);
-
-	@BeforeMethod
-	public void BeforeMethod() throws Exception {
-		DOMConfigurator.configure("log4j.xml");
-	  	sTestCaseName = this.toString();
-	  	sTestCaseName = Utils.getTestCaseName(this.toString());
-		Log.startTestCase(sTestCaseName);
-		
-		driver= Utils.OpenBrowser();
-		new BaseClass(driver);
-		//	extent.init(Constant.ReportsLocation, false);
-	}
+public class TC005_EditForm {
 	
-	@Test
-	public void main() throws Exception{
-		//extent.startTest(sTestCaseName, "description");
-		try{
-			//This is to get the file names from Constant.java file	
-			ExcelUtils.setExcelFile(ExcelPaths.excelfileForCreateForm, Constant.loginSheetName);
-			int Row= 1;
-			Login_Action.Login_steps(Row);
-			Thread.sleep(5000);
-			CreateForm_Action.BlankForm();
-			CreateForm_Action.fillBlankForm(Row);
+		private static String sTestCaseName;
+		public static WebDriver driver;
+		public static int mCol;
+		
+		@BeforeMethod
+		public void BeforeMethod() throws Exception {
+			DOMConfigurator.configure("log4j.xml");
+		  	sTestCaseName = this.toString();
+		  	sTestCaseName = Utils.getTestCaseName(this.toString());
+			Log.startTestCase(sTestCaseName);
 			
-			ExcelUtils.setExcelFile(ExcelPaths.excelfileForCreateForm, Constant.SheetNameForItemDesc);
+			driver= Utils.OpenBrowser();
+			new BaseClass(driver);
+		}
+		
+		@Test
+		public void main() throws Exception{
+			TC004_CreateBlankForm createForm= new TC004_CreateBlankForm();
+			createForm.main();
+			ExcelUtils.setExcelFile(ExcelPaths.excelfileForCreateForm, Constant.loginSheetName);
+			int Row= 3;
+			EditForm_Action.EditForm();
+			
+			CreateForm_Action.fillBlankForm(Row);
+			ExcelUtils.setExcelFile(ExcelPaths.excelfileForCreateForm, Constant.SheetNameForItemEdition);
 			int Total_number_of_rows= ExcelUtils.getRowUsed();
 			for(int row = 1; row <= Total_number_of_rows; row++) {
 						
-				AddItemsInForms_Action.add(row);
+				EditForm_Action.UpdateItemDetails(row);
+				
 				AddInputTypesInForms_Action.pageFactory();
 				//Check condition if input items are found 
-				switch (AddItemsInForms_Action.inputType.toLowerCase()){
+				switch (EditForm_Action.inputType.toLowerCase()){
 				case "attachment":
 					AddInputTypesInForms_Action.Input_Item_Attachment(row);
 					break;
@@ -92,16 +88,16 @@ public class TC004_CreateBlankForm {
 					AddInputTypesInForms_Action.Input_Item_SketchPad(row);
 					break;
 				case "audio (display only)":
-					AddInputTypesInForms_Action.Input_Item_Audio_DisplayOnly(row);
+					EditForm_Action.Input_Item_Audio_DisplayOnly(row);
 					break;
 				case "image (display only)":
-					AddInputTypesInForms_Action.Input_Item_Image_DisplayOnly(row);
+					EditForm_Action.Input_Item_Image_DisplayOnly(row);
 					break;
 				case "video (display only)":
-					AddInputTypesInForms_Action.Input_Item_video_DisplayOnly(row);
+					EditForm_Action.Input_Item_video_DisplayOnly(row);
 					break;
 				case "hyperlink (display only)":
-					AddInputTypesInForms_Action.Input_Item_Hyperlink_DisplayOnly(row);
+					EditForm_Action.Input_Item_Hyperlink_DisplayOnly(row);
 					break;
 				case "matrix multi-select":
 					AddInputTypesInForms_Action.Input_Item_Matrix_Multi_select(row);
@@ -110,7 +106,7 @@ public class TC004_CreateBlankForm {
 					AddInputTypesInForms_Action.Input_Item_Matrix_Single_Select(row);
 					break;
 				case "map":
-					AddInputTypesInForms_Action.Input_Item_map(row);
+					EditForm_Action.Input_Item_map(row);
 					break;
 				case "multi-select":
 					AddInputTypesInForms_Action.Input_Item_MultiSelect(row);
@@ -137,23 +133,15 @@ public class TC004_CreateBlankForm {
 			}
 			ExcelUtils.setExcelFile(ExcelPaths.excelfileForCreateForm, Constant.loginSheetName);
 			SaveAndverifyTheForm_Action.SaveAndVerify(Row);
-			VerifyFormData_Action.verifyCreatedFormData(Constant.SheetNameForItemDesc);
-		//	extent.log(LogStatus.PASS, "Details");
-		}catch(Exception e){
-			Utils.takeScreenshot(driver, sTestCaseName);
-		//	extent.attachScreenshot(Constant.ReportsLocation, "Fail");
-			Log.error(e.getMessage());
-			throw (e);
+			VerifyFormData_Action.verifyCreatedFormData(Constant.SheetNameForItemEdition);
+			System.out.println(Constant.SheetNameForItemEdition);
 		}
-	}
-	
-	@AfterTest
-	public void afterMethod() throws Exception {
-		Logout_Action.Logout();
-		Log.endTestCase(sTestCaseName);
-		driver.close();
-		driver.quit();
-		//extent.endTest();
-	}
-	
-}	
+		
+		@AfterTest
+		public void afterMethod() throws Exception {
+			Logout_Action.Logout();
+			Log.endTestCase(sTestCaseName);
+			driver.close();
+			driver.quit();
+		}
+}

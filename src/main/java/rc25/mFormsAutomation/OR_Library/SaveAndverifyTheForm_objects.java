@@ -28,11 +28,17 @@ public class SaveAndverifyTheForm_objects {
 		return save_btn;
 	}
 	
-	@FindBy(how = How.CSS, using = "span[class=save_draft_head_btn]")//"//button[contains(text(),'Save')]") 
+	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Save')]")//"//button[contains(text(),'Save')]") 
 	private WebElement SaveForm_btn;
 	public WebElement getSaveForm_btn() {
 		return SaveForm_btn;
 	}
+	
+	/*@FindBy(how = How.XPATH, using = "//ul[@class='header-button-group drop']//span[@class='save_draft_head_btn']")//"//button[contains(text(),'Save')]") 
+	private WebElement EditSaveForm_btn;
+	public WebElement getEditSaveForm_btn() {
+		return EditSaveForm_btn;
+	}*/
 	
 	
 	@FindBy(how = How.XPATH, using = "//tr[@class='note hightlightTr']//td[@class='width30 left_align']")

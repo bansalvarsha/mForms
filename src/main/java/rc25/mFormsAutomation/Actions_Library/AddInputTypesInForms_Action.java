@@ -54,7 +54,9 @@ public class AddInputTypesInForms_Action extends AddItemsInForms_Action{
     	new Select(AddInputTypeObj.getAudioCount()).selectByVisibleText(MaximumNumberOfAudios);
     	
     	String MaximumFileDuration = ExcelUtils.getCellData(row, Constant.Col_MaxFileDuration);
-    	new Select(AddInputTypeObj.getAudioSize()).selectByVisibleText(MaximumFileDuration);
+    	if(!CreateForm_Action.getFormNameValue.equals("")){
+    		new Select(driver.findElement(By.xpath(AddInputTypeInForms_objects.getEditVideoSize()))).selectByVisibleText(MaximumFileDuration);
+    	}else new Select(AddInputTypeObj.getAudioSize()).selectByVisibleText(MaximumFileDuration);
     	
     	if(CreateForm_Action.getFormNameValue.equals("")){
     	Log.info("Input type Audio added");
@@ -218,10 +220,7 @@ public class AddInputTypesInForms_Action extends AddItemsInForms_Action{
 	
 	public static void Input_Item_Image_DisplayOnly(int row) throws Exception {
 		AddInputTypeInForms_objects.mRow= row;
-		
-		if(CreateForm_Action.getFormNameValue.equals("")){
 		AddInputTypeObj.getInputItem_Image_DisplayOnly().click();
-		}else Utils.Scroll_Down_To_InputType(row);
 		
 		Thread.sleep(2000);
  	   	driver.findElement(By.xpath(AddInputTypeInForms_objects.getUploadFromComputer())).click();
@@ -235,26 +234,19 @@ public class AddInputTypesInForms_Action extends AddItemsInForms_Action{
       		if ( !driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequiredForDiplayControls())).isSelected() ){
         		driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequiredForDiplayControls())).click();
         		}
-      	} else System.out.println("required has been skiped");
+      	} else Log.info("required has been skiped");
       	String opencom= ExcelUtils.getCellData(row, Constant.Col_openComment);
       	if(opencom.equalsIgnoreCase("yes")) {
       		if ( !driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLocForDiplayControls())).isSelected() ){
         		driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLocForDiplayControls())).click();
         		}
       	} else 
-      		System.out.println("open comment has been skiped");
+      		Log.info("open comment has been skiped");
       	
-      	
-      	 if(!CreateForm_Action.getFormNameValue.equals("")){
-      		driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton1Loc())).clear();
-      		driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton2Loc())).clear();
-      		driver.findElement(By.xpath(AddInputTypeInForms_objects.getInputOptionLocDisplay())).clear();
-      	 }
-      	 
       		String CaptionOfButton= ExcelUtils.getCellData(row, Constant.Col_Caption1);
           	driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton1Loc())).sendKeys(CaptionOfButton);
           	
-          	String CaptionOfButton2= ExcelUtils.getCellData(row, Constant.Col_Caption1);
+          	String CaptionOfButton2= ExcelUtils.getCellData(row, Constant.Col_Caption2);
           	driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton2Loc())).sendKeys(CaptionOfButton2);
           	
       	String InputOption= ExcelUtils.getCellData(row, Constant.Col_InputOptionRows);
@@ -263,40 +255,28 @@ public class AddInputTypesInForms_Action extends AddItemsInForms_Action{
       		new Actions(driver).sendKeys(Keys.ENTER).perform();
       	}
       	
-      	if(CreateForm_Action.getFormNameValue.equals("")){
       	Log.info("Input type image (display only) added");
-      	} else Log.info("Image display only updated");
 	}
 	
 	public static void Input_Item_video_DisplayOnly(int row) throws Exception {
 		AddInputTypeInForms_objects.mRow= row;
-	
-		if(CreateForm_Action.getFormNameValue.equals("")){
 		AddInputTypeObj.getInputItem_Video_DisplayOnly().click();
-		}else Utils.Scroll_Down_To_InputType(row);
 		
       	String req= ExcelUtils.getCellData(row, Constant.Col_Required);
         if(req.equalsIgnoreCase("yes")) {
         	if ( !driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequiredForDiplayControls())).isSelected() ){
         		driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequiredForDiplayControls())).click();
         		}
-        } else System.out.println("required has been skiped");
+        } else Log.info("required has been skiped");
         String opencom= ExcelUtils.getCellData(row, Constant.Col_openComment);
         if(opencom.equalsIgnoreCase("yes"))	{
 			if ( !driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLocForDiplayControls())).isSelected() ){
         		driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLocForDiplayControls())).click();
         		}
-        } else System.out.println("open comment has been skiped");
+        } else Log.info("open comment has been skiped");
         
     	Utils.Scroll_Down_Page();
-        if(!CreateForm_Action.getFormNameValue.equals("")){
-        	 driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton1Loc())).clear();
-        	 driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton2Loc())).clear();
-        	 driver.findElement(By.xpath(AddInputTypeInForms_objects.getInputOptionLocDisplay())).clear();
-        }
-        
         String CaptionOfButton= ExcelUtils.getCellData(row, Constant.Col_Caption1);
-       
  		driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton1Loc())).sendKeys(CaptionOfButton);
  		driver.findElement(By.xpath(AddInputTypeInForms_objects.getUploadFromComputer())).click();
        	Runtime.getRuntime().exec(Constant.VideoFilePath);
@@ -311,37 +291,25 @@ public class AddInputTypesInForms_Action extends AddItemsInForms_Action{
         	new Actions(driver).sendKeys(Keys.ENTER).perform();
         }
         
-        if(CreateForm_Action.getFormNameValue.equals("")){
         Log.info("Input type video (display only) added");
-        } else Log.info("Video display only updated");
 	}
 		
 	public static void Input_Item_Hyperlink_DisplayOnly(int row) throws Exception {
 		AddInputTypeInForms_objects.mRow= row;
-		
-		if(CreateForm_Action.getFormNameValue.equals("")){
 		AddInputTypeObj.getInputItem_Hyperlink_DisplayOnly().click();
-		}else Utils.Scroll_Down_To_InputType(row);
 		
 		String req= ExcelUtils.getCellData(row, Constant.Col_Required);
 		if(req.equalsIgnoreCase("yes")) {
 			if ( !driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequiredForDiplayControls())).isSelected() ){
 				driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequiredForDiplayControls())).click();
 			}
-		} else System.out.println("required has been skiped");
+		} else Log.info("required has been skiped");
 		String opencom= ExcelUtils.getCellData(row, Constant.Col_openComment);
 		if(opencom.equalsIgnoreCase("yes")) {
 			if ( !driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLocForDiplayControls())).isSelected() ){
 				driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLocForDiplayControls())).click();
 			}
-		} else System.out.println("open comment has been skiped");
-		
-		if(!CreateForm_Action.getFormNameValue.equals("")){
-			driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton1Loc())).clear();
-			driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton2Loc())).clear();
-			driver.findElement(By.xpath(AddInputTypeInForms_objects.getInputOptionLocDisplay())).clear();
-			driver.findElement(By.xpath(AddInputTypeInForms_objects.getInputOption1Loc())).clear();
-		}
+		} else Log.info("open comment has been skiped");
 		
 		String CaptionOfButton= ExcelUtils.getCellData(row, Constant.Col_Caption1);
 		driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButton1Loc())).sendKeys(CaptionOfButton);
@@ -358,9 +326,7 @@ public class AddInputTypesInForms_Action extends AddItemsInForms_Action{
 			String InputOption1= ExcelUtils.getCellData(row, Constant.Col_InputOptionColumns);
 			driver.findElement(By.xpath(AddInputTypeInForms_objects.getInputOption1Loc())).sendKeys(InputOption1);
 			
-			if(CreateForm_Action.getFormNameValue.equals("")){
 			Log.info("Input type hyperlink (display only) added");
-			} else Log.info("Input type hyperlink display only updated");
 	}
 	
 	public static void Input_Item_map(int row) throws Exception {
@@ -480,6 +446,7 @@ public class AddInputTypesInForms_Action extends AddItemsInForms_Action{
 		
 		DriverUtils.RequiredChkbox(row);
 		DriverUtils.OpenCommentChkbox(row);
+		Thread.sleep(1000);
 		DriverUtils.ButtonCaption(row);
 		
 		String RatingType= ExcelUtils.getCellData(row, Constant.Col_MaxNoOfFilesOrRatingType);
@@ -559,7 +526,9 @@ public class AddInputTypesInForms_Action extends AddItemsInForms_Action{
     	new Select(AddInputTypeObj.getVideoCount()).selectByVisibleText(NumberOfVideos);
     	
     	String SizeOFVideo= ExcelUtils.getCellData(row, Constant.Col_MaxFileDuration);
-    	new Select(AddInputTypeObj.getVideoSize()).selectByVisibleText(SizeOFVideo);
+    	if(!CreateForm_Action.getFormNameValue.equals("")){
+    	new Select(driver.findElement(By.xpath(AddInputTypeInForms_objects.getEditVideoSize()))).selectByVisibleText(SizeOFVideo);
+    	}else new Select(AddInputTypeObj.getVideoSize()).selectByVisibleText(SizeOFVideo);
     	
     	if(CreateForm_Action.getFormNameValue.equals("")){
     	Log.info("Input type video added");

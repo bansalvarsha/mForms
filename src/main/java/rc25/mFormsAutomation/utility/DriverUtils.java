@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
-import rc25.mFormsAutomation.Actions_Library.VerifyFormData_Action;
 import rc25.mFormsAutomation.Base.BaseClass;
 import rc25.mFormsAutomation.OR_Library.AddInputTypeInForms_objects;
 import rc25.mFormsAutomation.OR_Library.AddResponse_objects;
@@ -57,11 +56,11 @@ public class DriverUtils extends BaseClass{
 			if(element.getAttribute("style").contains("background-position: 0px 0px;")){
 				Utils.waitForElementOnvisibilityOf(element);
 				driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequired())).click();
-			} else System.out.println("Required has been skipped");
+			} else Log.info("Required has been skipped");
 		
 		}else {
 			if(element.getAttribute("style").contains("background-position: 0px 0px;")){
-				System.out.println("Required has been skipped");
+				Log.info("Required has been skipped");
 			} else{
 				Utils.waitForElementOnvisibilityOf(element);
 				driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequired())).click();
@@ -78,11 +77,11 @@ public class DriverUtils extends BaseClass{
 		if(openCommand.equalsIgnoreCase("yes")) {
 			if(element.getAttribute("style").contains("background-position: 0px 0px;")){
 					driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLoc())).click();
-			}else System.out.println("open comment has been skiped");
+			}else Log.info("open comment has been skiped");
 			
 		} else{
 			if(element.getAttribute("style").contains("background-position: 0px 0px;")){
-				System.out.println("open comment has been skiped");
+				Log.info("open comment has been skiped");
 			} else{
 				driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLoc())).click();
 			}
@@ -130,55 +129,39 @@ public class DriverUtils extends BaseClass{
 	//Method to verify the created or edited form's required check box value from excel sheet
 	public static void VerifyRequiredChkbox(int row) throws Exception {
 		String getActRequired;
-		String ActRequired= ExcelUtils.getCellData(row, Constant.Col_Required);
+		String ActRequired= ExcelUtils.getCellData(row, Constant.Col_Required).toLowerCase();
 		AddInputTypeInForms_objects.mRow= row;
 		
 		WebElement element= driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequired()));
 		
 		//Verify if the check box is not checked
 		if(element.getAttribute("style").contains("background-position: 0px 0px;")){
-			getActRequired= "No";
-		}else getActRequired= "Yes";
+			getActRequired= "No".toLowerCase();
+		}else getActRequired= "Yes".toLowerCase();
 		
-		String MessagePrintinIfCase= VerifyFormData_Action.inputType + " has the same value of required checkbox as mentioned in data sheet.";
-		String MessagePrintinElseCase= 	"Item" + row + "has the different value of required checkbox from which is mentioned in data sheet. " 
-				+ "value of required checkbox in data sheet is: " + ActRequired
-				+ " and value of required checkbox in form is: " + getActRequired;	
-				
-		if(getActRequired.equalsIgnoreCase(ActRequired)){
-			System.out.println(MessagePrintinIfCase);
-			Log.info(MessagePrintinIfCase);
-		}else {
-			System.out.println(MessagePrintinElseCase);
-			Log.info(MessagePrintinElseCase);
-		}
+		String DataMatch= "Required checkbox has same value as mentioned in data sheet.";
+		String DataMismatch= 	"Required checkbox has different value from data sheet. "
+				+ "Data sheet value is: " + ActRequired + " and Form value is: " + getActRequired;	
+		Utils.VerifyMessages(ActRequired, getActRequired, row, DataMatch, DataMismatch);
 	}
 		
 	//Method to verify the created or edited form's Open for comment check box value from excel sheet
 	public static void VerifyOpenCommentChkbox(int row) throws Exception {
 		String getOpenCommand;
-		String openCommand= ExcelUtils.getCellData(row, Constant.Col_openComment);//Fetching Data from excel 
+		String openCommand= ExcelUtils.getCellData(row, Constant.Col_openComment).toLowerCase();//Fetching Data from excel 
 		AddInputTypeInForms_objects.mRow= row;
 		
 		WebElement element= driver.findElement(By.xpath(AddInputTypeInForms_objects.getOpenCommLoc()));
 			
 		//Verify if the check box is not checked
 		if(element.getAttribute("style").contains("background-position: 0px 0px;")){
-			getOpenCommand= "No";
-		}else getOpenCommand= "Yes";
+			getOpenCommand= "No".toLowerCase();
+		}else getOpenCommand= "Yes".toLowerCase();
 		
-		String MessagePrintinIfCase= VerifyFormData_Action.inputType + " has the same value of 'Add Open Comment text area' checkbox as mentioned in data sheet.";
-		String MessagePrintinElseCase= "Item" + row + "has the different value of 'Add Open Comment text area' checkbox from which is mentioned in data sheet. " 
-				+ "value of 'Add Open Comment text area' checkbox in data sheet is: " + openCommand
-				+ " and value of 'Add Open Comment text area' checkbox in form is: " + getOpenCommand;
-		
-		if(getOpenCommand.equalsIgnoreCase(openCommand)){
-			System.out.println(MessagePrintinIfCase);
-			Log.info(MessagePrintinIfCase);
-		}else {
-			System.out.println(MessagePrintinElseCase);
-			Log.info(MessagePrintinElseCase);
-		}
+		String DataMatch= "'Add Open Comment text area' checkbox has same value as mentioned in data sheet.";
+		String DataMismatch= "'Add Open Comment text area' checkbox has different value from data sheet. "
+				+ "Data sheet value is: " + openCommand + " and Form value is: " + getOpenCommand;
+		Utils.VerifyMessages(openCommand, getOpenCommand, row, DataMatch, DataMismatch);
 	}
 	
 	public static void VerifyButtonCaption(int row) throws Exception {
@@ -187,18 +170,10 @@ public class DriverUtils extends BaseClass{
 		String CaptionOfButton= ExcelUtils.getCellData(row, Constant.Col_Caption1);//Fetching Data from excel 
 		String getCaptionOfButton= driver.findElement(By.xpath(AddInputTypeInForms_objects.getCaptionOfButtonLoc())).getAttribute("value");
 		 
-		String ifMsgofCaption_Btn= VerifyFormData_Action.inputType + " has the same value of caption button as mentioned in data sheet.";
-		String ElseMsgofCaption_Btn= "Item" + row + "has the different value of caption button from which is mentioned in data sheet. " 
-				+ "value of caption button in data sheet is: " + CaptionOfButton
-				+ " and value of caption button in form is: " + getCaptionOfButton;
-		
-		if(getCaptionOfButton.equalsIgnoreCase(CaptionOfButton)){
-			System.out.println(ifMsgofCaption_Btn);
-			Log.info(ElseMsgofCaption_Btn);
-		}else {
-			System.out.println(ifMsgofCaption_Btn);
-			Log.info(ElseMsgofCaption_Btn);
-		}
+		String DataMatch= "Caption button has same value as mentioned in data sheet.";
+		String DataMismatch= "Caption button value is different from data sheet. " 
+				+ "Data sheet value is: " + CaptionOfButton + " and Form value is: " + getCaptionOfButton;
+		Utils.VerifyMessages(CaptionOfButton, getCaptionOfButton, row, DataMatch, DataMismatch);
 	}
 		
 	public static void VerifyInputOption(int row) throws Exception {
@@ -206,21 +181,11 @@ public class DriverUtils extends BaseClass{
 		String InputOption= ExcelUtils.getCellData(row, Constant.Col_InputOptionRows);
     	String getInputOption= driver.findElement(By.xpath(AddInputTypeInForms_objects.getInputOptionLoc())).getText();
     	
-    	//Print messages on console
-    	String ifMsgofInputOption= VerifyFormData_Action.inputType + " has the same input options as mentioned in data sheet";
-		String ElseMsgofInputOption=	"Item" + row + " has the different input options from which is mentioned in data sheet. " 
-				+ "input options in data sheet is: " + InputOption
-				+ " and input options in form is: " + getInputOption;
-    			
-		//verify the input options values from excel sheet
-    	if(getInputOption.equals(InputOption)){
-    		System.out.println(ifMsgofInputOption);
-    		Log.info(ifMsgofInputOption);
-    	}else {
-			System.out.println(ElseMsgofInputOption);
-			Log.info(ElseMsgofInputOption);
-    	}
-    	}
+    	String DataMatch= "Input options has same value as mentioned in data sheet";
+		String DataMismatch= "Input options has different values from data sheet. " 
+				+ "Data sheet value is: " + InputOption + " and Form value is: " + getInputOption;
+		Utils.VerifyMessages(InputOption, getInputOption, row, DataMatch, DataMismatch);
+	}
 	
 	
 }

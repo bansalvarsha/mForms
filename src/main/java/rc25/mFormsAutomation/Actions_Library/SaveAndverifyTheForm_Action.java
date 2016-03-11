@@ -30,8 +30,9 @@ public class SaveAndverifyTheForm_Action extends BaseClass {
 	static InputStream input = null;
 	static SaveAndverifyTheForm_objects SaveAndverifyObj;
 	static CreateLibrary_objects CreateLibObj; 
-	 static String AddedItemName;
-	 static WebElement getRecordInTheList;
+	static String AddedItemName;
+	static WebElement getRecordInTheList;
+	static boolean save_btn = false;
 	 
 		
 	//Method to save the form
@@ -44,12 +45,31 @@ public class SaveAndverifyTheForm_Action extends BaseClass {
 		
 		Thread.sleep(5000);
 		
-		//Click on save button if user is creating "Form"
+		/*//Click on save button if user is creating "Form"
 		if(libraryName.toLowerCase().contains("forms library"))
 			SaveAndverifyObj.getSaveForm_btn().click();
 		else 
 		 SaveAndverifyObj.getsave_btn().click();
-		 Log.info("Clicked on save button");
+		 Log.info("Clicked on save button");*/
+		 
+		 
+		 
+	      try{
+	    	  save_btn = SaveAndverifyObj.getSaveForm_btn().isDisplayed();
+	    	  save_btn= true;
+	          } catch(Exception e){
+	       e.getStackTrace();
+	       save_btn= false;
+	          }
+	      
+	          if(save_btn){
+	        	  SaveAndverifyObj.getSaveForm_btn().click();
+	        	  try{
+	        	  SaveAndverifyObj.getSaveForm_btn().click();
+	        	  }catch(Exception nsee){
+	        		  nsee.getStackTrace();
+	        	  }
+	          }else SaveAndverifyObj.getsave_btn().click();
 		 
 		 //Handle save form pop up while user edit and saves the form
 		 EditFormPopup();

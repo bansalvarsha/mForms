@@ -83,7 +83,7 @@ public class AddInputTypeInForms_objects {
 		}
 		
 		public static String getEditButtonCaption(){
-			return "//*[@id='librarybodyareaCount_"+ mRow +"']/div[2]/div/div/div/div/div[1]/div/div[4]/span/input"; 
+			return "//div[@id='divSort_" + mRow + "']/div[2]//div[@class='input_control_area']//span/input"; 
 		}
 		
 		public static String getEditButton2Caption() {
@@ -92,6 +92,10 @@ public class AddInputTypeInForms_objects {
 		
 		public static String getEditMapButtonCaption() {
 			return "//div[@id='divSort_" + mRow + "']//div[@class='input_control_area']/div/div/div/div/div/div/span/input";
+		}
+		
+		public static String getEditVideoSize() {
+			return "//div[@id='divSort_" + mRow + "']//select[@id='MediaSize']";
 		}
 		
 		@FindBy(how= How.CSS, using = "input[class=cancel_head_btn]")
@@ -118,7 +122,7 @@ public class AddInputTypeInForms_objects {
 			return SelectedVideoCount;
 		}
 		
-		@FindBy(how= How.CSS, using = "#MediaSize>option[selected='selected']")
+		@FindBy(how= How.CSS, using = "#MediaSize[class='VideoSize']>option[selected='selected']")
 		private WebElement SelectedVideoSize;
 		public WebElement getSelectedVideoSize(){
 			return SelectedVideoSize;
@@ -130,10 +134,8 @@ public class AddInputTypeInForms_objects {
 			return SelectedImageCount;
 		}
 		
-		@FindBy(how= How.CSS, using = "#MediaSize>option[selected='selected']")
-		private WebElement SelectedAudioSize;
-		public WebElement getSelectedAudioSize(){
-			return SelectedAudioSize;
+		public static String getSelectedAudioSize(){
+			return "//div[@id='divSort_" + mRow + "']//*[@id='MediaSize']//option[@selected='selected']";
 		}
 		
 		@FindBy(how= How.CSS, using = "#AudioCount>option[selected='selected']")

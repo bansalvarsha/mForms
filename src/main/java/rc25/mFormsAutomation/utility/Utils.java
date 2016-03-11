@@ -111,7 +111,6 @@ public class Utils {
 		 }
 	}
 	
-	
 	//Scroll the page
 	public static void Scroll_Down_Page() throws AWTException, InterruptedException {
 		JavascriptExecutor je = (JavascriptExecutor) driver;  
@@ -122,6 +121,15 @@ public class Utils {
 		AddItems_objects.mRow= row;
 		JavascriptExecutor je = (JavascriptExecutor) driver;  
 		je.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.xpath(AddItems_objects.getAddItemName())));
+	}
 	
+	//Method to print or log the messages whether data is matched with data sheet or not.
+	public static void VerifyMessages(String getExcelData, String getFormData, int row, String DataMatch, String DataMismatch){
+		//verify the input options values from excel sheet
+    	if(getFormData.equals(getExcelData)){
+    		Log.info(DataMatch);
+    	}else {
+			Log.info(DataMismatch);
+    	}
 	}
 }
