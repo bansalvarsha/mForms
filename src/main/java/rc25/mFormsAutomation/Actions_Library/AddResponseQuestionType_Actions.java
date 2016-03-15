@@ -58,7 +58,7 @@ public class AddResponseQuestionType_Actions extends BaseClass{
 		
 		driver.findElement(By.xpath(AddResponse_objects.getDateFromAddResponsePage(row))).click();
 		
-		try{
+	//	try{
 			WebElement time= driver.findElement(By.xpath(AddResponse_objects.SelectTime(row)));
 			
 			WebElement STime= responseObj.getSTime();
@@ -70,9 +70,9 @@ public class AddResponseQuestionType_Actions extends BaseClass{
 				responseObj.getScrollNext().click();
 			}
 			time.click();
-		} catch(NotFoundException | ElementNotVisibleException e){
-			System.out.println("Given time in data sheet is not present in the list.");
-		}
+		//} catch(NotFoundException | ElementNotVisibleException e){
+		//	System.out.println("Given time in data sheet is not present in the list.");
+	//	}
 		DriverUtils.Remarks(row);
 	}
 	
