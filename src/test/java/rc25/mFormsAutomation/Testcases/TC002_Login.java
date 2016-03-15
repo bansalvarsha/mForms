@@ -19,13 +19,18 @@ import rc25.mFormsAutomation.utility.Constant;
 import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
 import rc25.mFormsAutomation.utility.Utils;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
 
 //@Listeners(main.resources.logging.Listener.class)
 public class TC002_Login {
 	public WebDriver driver;
 	private String sTestCaseName;
-	//private ExtentReports extent= ExtentReports.get(TC002_Login.class);
 	
+	// Create object of extent report and specify the Class name in get method in my case I have used AdvanceReporting.class
+	private ExtentReports extent= ExtentReports.get(TC002_Login.class);
+	
+	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
 		DOMConfigurator.configure("log4j.xml");
@@ -48,14 +53,16 @@ public class TC002_Login {
 		// Initializing the Base Class for Selenium driver, we do need to provide the Selenium driver to any of the Page classes or Module Actions
 		new BaseClass(driver);
 		
-		/*extent.init(Constant.ReportsLocation, true);
+		// Call init method and specify the location where you want to save this report second parameter is set to true it means it will overwrite report with new one
+		extent.init(Constant.ReportsLocation, true);
+		
 		extent.startTest(sTestCaseName, "Login test to check the login with valid or invalid credentials");
 		extent.config().displayCallerClass(false);
 		extent.config().displayTestHeaders(true);
 		extent.config().documentTitle("mForms Automation Testing");
 		extent.config().reportHeadline("mForms Automation Test Report of Selenium WebDriver");
 		extent.config().reportTitle("mForms Automation");
-		extent.config().useExtentFooter(false);*/
+		extent.config().useExtentFooter(false);
 	}
 
 	@Test
@@ -79,11 +86,11 @@ public class TC002_Login {
 				//call the test data validation method from login action class
 				Login_Action.TestDatavalidation();
 			}
-			//extent.log(LogStatus.PASS, "Script is executed successfully");
+			extent.log(LogStatus.PASS, "Script is executed successfully");
 		}catch(Exception e){
-			//Utils.takeScreenshot(driver, sTestCaseName);
-			//extent.attachScreenshot(Constant.AbsolutePath_ScreenShot + sTestCaseName +".jpg", "Fail");
-			//extent.log(LogStatus.ERROR, e.getMessage());
+			Utils.takeScreenshot(driver, sTestCaseName);
+			extent.attachScreenshot(Constant.AbsolutePath_ScreenShot + sTestCaseName +".jpg", "Fail");
+			extent.log(LogStatus.ERROR, e.getMessage());
 			Log.error(e.getMessage());
 			throw (e);
 		}
@@ -96,6 +103,6 @@ public class TC002_Login {
 		driver.close();
 		driver.quit();
 		Log.info("Browser closed");
-		//extent.endTest();
+		extent.endTest();
 	}
 }

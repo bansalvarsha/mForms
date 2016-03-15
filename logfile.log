@@ -3929,3 +3929,284 @@ Session ID: 7e613cb0-8b15-4abf-88c0-5d05c08052e4
 2016-03-11 15:14:55,050 INFO  [Log] Required has been skipped 
 2016-03-11 15:14:56,022 INFO  [Log] Input type signature updated 
 2016-03-11 15:14:56,042 INFO  [Log] Excel sheet opened 
+2016-03-14 17:05:36,498 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:05:36,551 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC002_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-14 17:05:36,551 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:05:37,245 INFO  [Log] Excel sheet opened 
+2016-03-14 17:05:54,452 INFO  [Log] Web application launched successfully 
+2016-03-14 17:06:42,810 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:06:42,811 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC002_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-14 17:06:42,811 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:06:43,047 INFO  [Log] Excel sheet opened 
+2016-03-14 17:06:52,980 INFO  [Log] Web application launched successfully 
+2016-03-14 17:06:53,195 INFO  [Log] Header logo is found 
+2016-03-14 17:06:53,239 INFO  [Log] Mobilize Your Workforce
+Capture / Process / Present / Respond 
+2016-03-14 17:06:53,313 INFO  [Log] Copyright © 2003-2016 Mobile Spectrum LLC. All Rights Reserved. Version: 2.5.2.1 
+2016-03-14 17:06:53,370 INFO  [Log] Copy right image source is 'http://rc25.mforms.us/NewImages/copyright.png' 
+2016-03-14 17:06:53,378 INFO  [Log] Total number of Row used return as < 12 >. 
+2016-03-14 17:06:53,378 INFO  [Log] User: 1 
+2016-03-14 17:06:53,554 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-14 17:06:53,686 INFO  [Log] password '123456' entered 
+2016-03-14 17:06:57,461 INFO  [Log] Clicked on login button 
+2016-03-14 17:06:57,691 INFO  [Log] Top navigations are found on home page 
+2016-03-14 17:06:57,691 INFO  [Log] Logged in user is the super admin 
+2016-03-14 17:07:07,032 INFO  [Log] Logout button found on home page 
+2016-03-14 17:07:07,032 INFO  [Log] User: 2 
+2016-03-14 17:07:08,714 INFO  [Log] User name '' entered 
+2016-03-14 17:07:08,822 INFO  [Log] password '' entered 
+2016-03-14 17:07:08,979 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:29,051 ERROR [Log] Some thing is suspicious here, no validation messages occured 
+2016-03-14 17:07:29,051 INFO  [Log] User: 3 
+2016-03-14 17:07:29,316 INFO  [Log] User name 'pkumari+QC001@astegic.com' entered 
+2016-03-14 17:07:29,459 INFO  [Log] password '123456' entered 
+2016-03-14 17:07:30,684 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:30,801 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:07:30,801 INFO  [Log] User: 4 
+2016-03-14 17:07:30,951 INFO  [Log] User name 'pkumari+QC002@astegic.com' entered 
+2016-03-14 17:07:31,095 INFO  [Log] password '123456' entered 
+2016-03-14 17:07:32,311 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:32,400 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:07:32,400 INFO  [Log] User: 5 
+2016-03-14 17:07:32,492 INFO  [Log] User name '' entered 
+2016-03-14 17:07:32,609 INFO  [Log] password 'Astegic1!' entered 
+2016-03-14 17:07:32,757 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:32,838 INFO  [Log] Validation message is 'The User Name field is required.' 
+2016-03-14 17:07:32,838 INFO  [Log] User: 6 
+2016-03-14 17:07:33,074 INFO  [Log] User name 'unregisteredid@gmail.com' entered 
+2016-03-14 17:07:33,161 INFO  [Log] password '' entered 
+2016-03-14 17:07:33,299 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:33,376 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:07:33,376 INFO  [Log] User: 7 
+2016-03-14 17:07:33,562 INFO  [Log] User name 'unregisteredid@gmail.com' entered 
+2016-03-14 17:07:33,690 INFO  [Log] password '123456' entered 
+2016-03-14 17:07:34,835 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:34,948 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:07:34,948 INFO  [Log] User: 8 
+2016-03-14 17:07:35,161 INFO  [Log] User name 'invalididformat' entered 
+2016-03-14 17:07:35,364 INFO  [Log] password '' entered 
+2016-03-14 17:07:35,517 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:35,606 INFO  [Log] Validation message is 'The User Name field is not a valid e-mail address.' 
+2016-03-14 17:07:35,639 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:07:35,639 INFO  [Log] User: 9 
+2016-03-14 17:07:35,825 INFO  [Log] User name 'invalididformat' entered 
+2016-03-14 17:07:35,956 INFO  [Log] password '123456' entered 
+2016-03-14 17:07:36,097 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:36,180 INFO  [Log] Validation error is '' 
+2016-03-14 17:07:36,237 INFO  [Log] User: 10 
+2016-03-14 17:07:36,403 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:07:36,499 INFO  [Log] password '' entered 
+2016-03-14 17:07:36,635 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:36,716 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:07:36,716 INFO  [Log] User: 11 
+2016-03-14 17:07:36,897 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:07:37,017 INFO  [Log] password '123456' entered 
+2016-03-14 17:07:38,220 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:38,302 INFO  [Log] Validation error is 'Invalid password' 
+2016-03-14 17:07:38,302 INFO  [Log] User: 12 
+2016-03-14 17:07:38,476 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:07:38,622 INFO  [Log] password 'Astegic1!' entered 
+2016-03-14 17:07:41,457 INFO  [Log] Clicked on login button 
+2016-03-14 17:07:47,829 INFO  [Log] Logged in user is the admin 
+2016-03-14 17:07:57,571 INFO  [Log] Logout button found on home page 
+2016-03-14 17:07:57,585 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-14 17:07:59,031 INFO  [Log] Browser closed 
+2016-03-14 17:13:41,557 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:13:41,557 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC002_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-14 17:13:41,557 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:13:41,780 INFO  [Log] Excel sheet opened 
+2016-03-14 17:13:52,378 INFO  [Log] Web application launched successfully 
+2016-03-14 17:13:52,592 INFO  [Log] Header logo is found 
+2016-03-14 17:13:52,629 INFO  [Log] Mobilize Your Workforce
+Capture / Process / Present / Respond 
+2016-03-14 17:13:52,698 INFO  [Log] Copyright © 2003-2016 Mobile Spectrum LLC. All Rights Reserved. Version: 2.5.2.1 
+2016-03-14 17:13:52,734 INFO  [Log] Copy right image source is 'http://rc25.mforms.us/NewImages/copyright.png' 
+2016-03-14 17:13:52,742 INFO  [Log] Total number of Row used return as < 12 >. 
+2016-03-14 17:13:52,742 INFO  [Log] User: 1 
+2016-03-14 17:14:13,048 ERROR [Log] Unable to locate element: {"method":"id","selector":"usernam"}
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Varsha', ip: '192.168.1.198', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e03ecc8b-402b-493a-9d61-9388c6b3aa84
+*** Element info: {Using=id, value=usernam} 
+2016-03-14 17:14:13,077 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-14 17:14:13,688 INFO  [Log] Browser closed 
+2016-03-14 17:15:02,800 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:15:02,800 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC002_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-14 17:15:02,800 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:15:03,133 INFO  [Log] Excel sheet opened 
+2016-03-14 17:15:13,735 INFO  [Log] Web application launched successfully 
+2016-03-14 17:15:13,928 INFO  [Log] Header logo is found 
+2016-03-14 17:15:13,964 INFO  [Log] Mobilize Your Workforce
+Capture / Process / Present / Respond 
+2016-03-14 17:15:14,035 INFO  [Log] Copyright © 2003-2016 Mobile Spectrum LLC. All Rights Reserved. Version: 2.5.2.1 
+2016-03-14 17:15:14,071 INFO  [Log] Copy right image source is 'http://rc25.mforms.us/NewImages/copyright.png' 
+2016-03-14 17:15:14,079 INFO  [Log] Total number of Row used return as < 12 >. 
+2016-03-14 17:15:14,079 INFO  [Log] User: 1 
+2016-03-14 17:15:14,244 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-14 17:15:14,383 INFO  [Log] password '123456' entered 
+2016-03-14 17:15:22,082 INFO  [Log] Clicked on login button 
+2016-03-14 17:15:22,229 INFO  [Log] Top navigations are found on home page 
+2016-03-14 17:15:22,229 INFO  [Log] Logged in user is the super admin 
+2016-03-14 17:15:31,564 INFO  [Log] Logout button found on home page 
+2016-03-14 17:15:31,564 INFO  [Log] User: 2 
+2016-03-14 17:15:33,424 INFO  [Log] User name '' entered 
+2016-03-14 17:15:33,520 INFO  [Log] password '' entered 
+2016-03-14 17:15:33,681 INFO  [Log] Clicked on login button 
+2016-03-14 17:15:53,748 ERROR [Log] Some thing is suspicious here, no validation messages occured 
+2016-03-14 17:15:53,748 INFO  [Log] User: 3 
+2016-03-14 17:15:53,966 INFO  [Log] User name 'pkumari+QC001@astegic.com' entered 
+2016-03-14 17:15:54,086 INFO  [Log] password '123456' entered 
+2016-03-14 17:15:55,428 INFO  [Log] Clicked on login button 
+2016-03-14 17:15:55,517 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:15:55,517 INFO  [Log] User: 4 
+2016-03-14 17:15:55,672 INFO  [Log] User name 'pkumari+QC002@astegic.com' entered 
+2016-03-14 17:15:55,813 INFO  [Log] password '123456' entered 
+2016-03-14 17:15:57,021 INFO  [Log] Clicked on login button 
+2016-03-14 17:15:57,115 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:15:57,115 INFO  [Log] User: 5 
+2016-03-14 17:15:57,202 INFO  [Log] User name '' entered 
+2016-03-14 17:15:57,317 INFO  [Log] password 'Astegic1!' entered 
+2016-03-14 17:15:57,499 INFO  [Log] Clicked on login button 
+2016-03-14 17:15:57,588 INFO  [Log] Validation message is 'The User Name field is required.' 
+2016-03-14 17:15:57,588 INFO  [Log] User: 6 
+2016-03-14 17:15:57,847 INFO  [Log] User name 'unregisteredid@gmail.com' entered 
+2016-03-14 17:15:57,948 INFO  [Log] password '' entered 
+2016-03-14 17:15:58,082 INFO  [Log] Clicked on login button 
+2016-03-14 17:15:58,173 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:15:58,173 INFO  [Log] User: 7 
+2016-03-14 17:15:58,367 INFO  [Log] User name 'unregisteredid@gmail.com' entered 
+2016-03-14 17:15:58,498 INFO  [Log] password '123456' entered 
+2016-03-14 17:15:59,720 INFO  [Log] Clicked on login button 
+2016-03-14 17:15:59,935 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:15:59,935 INFO  [Log] User: 8 
+2016-03-14 17:16:00,102 INFO  [Log] User name 'invalididformat' entered 
+2016-03-14 17:16:00,246 INFO  [Log] password '' entered 
+2016-03-14 17:16:00,410 INFO  [Log] Clicked on login button 
+2016-03-14 17:16:00,513 INFO  [Log] Validation message is 'The User Name field is not a valid e-mail address.' 
+2016-03-14 17:16:00,544 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:16:00,544 INFO  [Log] User: 9 
+2016-03-14 17:16:00,723 INFO  [Log] User name 'invalididformat' entered 
+2016-03-14 17:16:00,855 INFO  [Log] password '123456' entered 
+2016-03-14 17:16:01,018 INFO  [Log] Clicked on login button 
+2016-03-14 17:16:01,092 INFO  [Log] Validation error is '' 
+2016-03-14 17:16:01,092 INFO  [Log] User: 10 
+2016-03-14 17:16:01,273 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:16:01,366 INFO  [Log] password '' entered 
+2016-03-14 17:16:01,500 INFO  [Log] Clicked on login button 
+2016-03-14 17:16:01,581 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:16:01,581 INFO  [Log] User: 11 
+2016-03-14 17:16:01,768 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:16:01,971 INFO  [Log] password '123456' entered 
+2016-03-14 17:16:03,123 INFO  [Log] Clicked on login button 
+2016-03-14 17:16:03,258 INFO  [Log] Validation error is 'Invalid password' 
+2016-03-14 17:16:03,258 INFO  [Log] User: 12 
+2016-03-14 17:16:03,389 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:16:03,527 INFO  [Log] password 'Astegic1!' entered 
+2016-03-14 17:16:35,883 INFO  [Log] Clicked on login button 
+2016-03-14 17:16:36,090 INFO  [Log] Logged in user is the admin 
+2016-03-14 17:16:45,864 INFO  [Log] Logout button found on home page 
+2016-03-14 17:16:45,873 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-14 17:16:46,778 INFO  [Log] Browser closed 
+2016-03-14 17:45:37,536 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:45:37,537 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC001_Registration       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-14 17:45:37,537 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:45:47,063 INFO  [Log] Web application launched successfully 
+2016-03-14 17:45:48,471 INFO  [Log] Excel sheet opened 
+2016-03-14 17:45:48,471 INFO  [Log] Total number of Row used return as < 1 >. 
+2016-03-14 17:45:48,733 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-14 17:45:48,876 INFO  [Log] password '123456' entered 
+2016-03-14 17:45:52,792 INFO  [Log] Clicked on login button 
+2016-03-14 17:45:58,273 INFO  [Log] Clicked on Customers Tab 
+2016-03-14 17:46:01,794 INFO  [Log] Clicked on Create New button to open the registration page 
+2016-03-14 17:46:01,951 INFO  [Log] Excel sheet opened 
+2016-03-14 17:46:03,860 INFO  [Log] Email entered 
+2016-03-14 17:46:03,958 INFO  [Log] password entered 
+2016-03-14 17:46:04,039 INFO  [Log] First name entered 
+2016-03-14 17:46:04,122 INFO  [Log] last name entered 
+2016-03-14 17:46:04,226 INFO  [Log] company name entered 
+2016-03-14 17:46:04,500 INFO  [Log] Industry selected 
+2016-03-14 17:46:07,778 INFO  [Log] Already exist please try with different name ! 
+2016-03-14 17:46:10,993 INFO  [Log] Customer name: mrsi.loris@Lfrm.ca, Already exist please try with different name ! 
+2016-03-14 17:46:18,315 INFO  [Log] Logout button found on home page 
+2016-03-14 17:46:18,365 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:46:18,365 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC002_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-14 17:46:18,365 INFO  [Log] **************************************************************************************** 
+2016-03-14 17:46:18,529 INFO  [Log] Excel sheet opened 
+2016-03-14 17:46:27,864 INFO  [Log] Web application launched successfully 
+2016-03-14 17:46:27,987 INFO  [Log] Header logo is found 
+2016-03-14 17:46:28,028 INFO  [Log] Mobilize Your Workforce
+Capture / Process / Present / Respond 
+2016-03-14 17:46:28,104 INFO  [Log] Copyright © 2003-2016 Mobile Spectrum LLC. All Rights Reserved. Version: 2.5.2.1 
+2016-03-14 17:46:28,143 INFO  [Log] Copy right image source is 'http://rc25.mforms.us/NewImages/copyright.png' 
+2016-03-14 17:46:28,152 INFO  [Log] Total number of Row used return as < 12 >. 
+2016-03-14 17:46:28,152 INFO  [Log] User: 1 
+2016-03-14 17:46:28,320 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-14 17:46:28,462 INFO  [Log] password '123456' entered 
+2016-03-14 17:46:35,498 INFO  [Log] Clicked on login button 
+2016-03-14 17:46:35,731 INFO  [Log] Top navigations are found on home page 
+2016-03-14 17:46:35,731 INFO  [Log] Logged in user is the super admin 
+2016-03-14 17:46:45,052 INFO  [Log] Logout button found on home page 
+2016-03-14 17:46:45,052 INFO  [Log] User: 2 
+2016-03-14 17:46:46,643 INFO  [Log] User name '' entered 
+2016-03-14 17:46:46,732 INFO  [Log] password '' entered 
+2016-03-14 17:46:46,944 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:07,040 ERROR [Log] Some thing is suspicious here, no validation messages occured 
+2016-03-14 17:47:07,040 INFO  [Log] User: 3 
+2016-03-14 17:47:07,316 INFO  [Log] User name 'pkumari+QC001@astegic.com' entered 
+2016-03-14 17:47:07,464 INFO  [Log] password '123456' entered 
+2016-03-14 17:47:08,727 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:08,816 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:47:08,816 INFO  [Log] User: 4 
+2016-03-14 17:47:08,981 INFO  [Log] User name 'pkumari+QC002@astegic.com' entered 
+2016-03-14 17:47:09,121 INFO  [Log] password '123456' entered 
+2016-03-14 17:47:10,287 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:10,379 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:47:10,379 INFO  [Log] User: 5 
+2016-03-14 17:47:10,462 INFO  [Log] User name '' entered 
+2016-03-14 17:47:10,568 INFO  [Log] password 'Astegic1!' entered 
+2016-03-14 17:47:10,706 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:10,778 INFO  [Log] Validation message is 'The User Name field is required.' 
+2016-03-14 17:47:10,779 INFO  [Log] User: 6 
+2016-03-14 17:47:10,991 INFO  [Log] User name 'unregisteredid@gmail.com' entered 
+2016-03-14 17:47:11,082 INFO  [Log] password '' entered 
+2016-03-14 17:47:11,199 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:11,277 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:47:11,277 INFO  [Log] User: 7 
+2016-03-14 17:47:11,462 INFO  [Log] User name 'unregisteredid@gmail.com' entered 
+2016-03-14 17:47:11,597 INFO  [Log] password '123456' entered 
+2016-03-14 17:47:12,640 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:12,752 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-14 17:47:12,752 INFO  [Log] User: 8 
+2016-03-14 17:47:12,867 INFO  [Log] User name 'invalididformat' entered 
+2016-03-14 17:47:12,962 INFO  [Log] password '' entered 
+2016-03-14 17:47:13,089 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:13,165 INFO  [Log] Validation message is 'The User Name field is not a valid e-mail address.' 
+2016-03-14 17:47:13,193 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:47:13,193 INFO  [Log] User: 9 
+2016-03-14 17:47:13,531 INFO  [Log] User name 'invalididformat' entered 
+2016-03-14 17:47:13,666 INFO  [Log] password '123456' entered 
+2016-03-14 17:47:13,797 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:13,874 INFO  [Log] Validation error is '' 
+2016-03-14 17:47:13,874 INFO  [Log] User: 10 
+2016-03-14 17:47:14,052 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:47:14,122 INFO  [Log] password '' entered 
+2016-03-14 17:47:14,247 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:14,321 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-14 17:47:14,321 INFO  [Log] User: 11 
+2016-03-14 17:47:14,486 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:47:14,592 INFO  [Log] password '123456' entered 
+2016-03-14 17:47:15,750 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:15,863 INFO  [Log] Validation error is 'Invalid password' 
+2016-03-14 17:47:15,863 INFO  [Log] User: 12 
+2016-03-14 17:47:15,980 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-14 17:47:16,111 INFO  [Log] password 'Astegic1!' entered 
+2016-03-14 17:47:19,010 INFO  [Log] Clicked on login button 
+2016-03-14 17:47:25,181 INFO  [Log] Logged in user is the admin 
+2016-03-14 17:47:34,932 INFO  [Log] Logout button found on home page 
+2016-03-14 17:47:34,944 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-14 17:47:35,759 INFO  [Log] Browser closed 
+2016-03-14 17:47:35,763 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 

@@ -6,7 +6,7 @@
       <class name="rc25.mFormsAutomation.Testcases.TC001_Registration"/>
       <class name="rc25.mFormsAutomation.Testcases.TC002_Login"/>
      
-      <class name="rc25.mFormsAutomation.Testcases.TC003_ForgotPassword"/>
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC003_ForgotPassword"/> -->
 <!--       <class name="rc25.mFormsAutomation.Testcases.TC004_CreateBlankForm"/> -->
       
 <!--       <class name="rc25.mFormsAutomation.Testcases.TC005_CreateFormWithDisplayControls"/> -->

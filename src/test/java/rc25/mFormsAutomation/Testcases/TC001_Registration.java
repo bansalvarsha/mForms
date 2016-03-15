@@ -11,6 +11,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
+
 import rc25.mFormsAutomation.Actions_Home.Login_Action;
 import rc25.mFormsAutomation.Actions_Home.UserRegistration_Action;
 import rc25.mFormsAutomation.Base.BaseClass;
@@ -24,7 +27,7 @@ public class TC001_Registration {
 	
     private String sTestCaseName;
 	public WebDriver driver;
-	//private ExtentReports extent= ExtentReports.get(TC001_Registration.class);
+	private ExtentReports extent= ExtentReports.get(TC001_Registration.class);
 	
 	@BeforeMethod
 	public void BeforeMethod() throws Exception {
@@ -34,13 +37,13 @@ public class TC001_Registration {
 		Log.startTestCase(sTestCaseName);
 		driver= Utils.OpenBrowser();
 		new BaseClass(driver);
-		//extent.init(Constant.ReportsLocation, true);
+		extent.init(Constant.ReportsLocation, true);
 	}
 	
 	//@Test(dataProvider = "dtProvider")
 	@Test
 	public void main() throws Exception{
-		//extent.startTest(sTestCaseName, "description");
+		extent.startTest(sTestCaseName, "description");
 		try{
 			ExcelUtils.setExcelFile(ExcelPaths.UserRegistrationDataSheetPath, Constant.SuperAdminCredentials);
 			int TotalNumberOfRows= ExcelUtils.getRowUsed();
@@ -50,14 +53,14 @@ public class TC001_Registration {
 				ExcelUtils.setExcelFile(ExcelPaths.UserRegistrationDataSheetPath, Constant.RegSheetName);
 				UserRegistration_Action.Registration(Row);
 			}
-			//extent.log(LogStatus.PASS, "Details");
-			//extent.log(LogStatus.ERROR, "Details");
+			extent.log(LogStatus.PASS, "Details");
+			extent.log(LogStatus.ERROR, "Details");
 		 
 			//ExcelUtils.setCellData("Pass", Row, Constant.Col_Result);
 		}catch (Exception e) {
 			//ExcelUtils.setCellData("Fail", Row, Constant.Col_Result);
 			Utils.takeScreenshot(driver, sTestCaseName);
-			//extent.attachScreenshot(Constant.ReportsLocation, "Fail");
+			extent.attachScreenshot(Constant.ReportsLocation, "Fail");
 			Log.error(e.getMessage());
 			throw (e);
 		}
@@ -68,7 +71,7 @@ public class TC001_Registration {
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
-		//extent.endTest();
+		extent.endTest();
 	}
 	
 	/*@DataProvider(name="dtProvider")
