@@ -4210,3 +4210,175 @@ Capture / Process / Present / Respond
 2016-03-14 17:47:34,944 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
 2016-03-14 17:47:35,759 INFO  [Log] Browser closed 
 2016-03-14 17:47:35,763 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-15 18:19:36,535 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:19:36,535 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC001_Registration       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-15 18:19:36,535 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:19:46,453 INFO  [Log] Web application launched successfully 
+2016-03-15 18:19:46,832 INFO  [Log] Excel sheet opened 
+2016-03-15 18:19:46,832 INFO  [Log] Total number of Row used return as < 1 >. 
+2016-03-15 18:19:46,962 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-15 18:19:47,027 INFO  [Log] password '123456' entered 
+2016-03-15 18:19:51,561 INFO  [Log] Clicked on login button 
+2016-03-15 18:19:56,837 INFO  [Log] Clicked on Customers Tab 
+2016-03-15 18:20:00,064 INFO  [Log] Clicked on Create New button to open the registration page 
+2016-03-15 18:20:00,089 INFO  [Log] Excel sheet opened 
+2016-03-15 18:20:01,924 INFO  [Log] Email entered 
+2016-03-15 18:20:01,977 INFO  [Log] password entered 
+2016-03-15 18:20:02,016 INFO  [Log] First name entered 
+2016-03-15 18:20:02,057 INFO  [Log] last name entered 
+2016-03-15 18:20:02,099 INFO  [Log] company name entered 
+2016-03-15 18:20:02,202 INFO  [Log] Industry selected 
+2016-03-15 18:20:05,206 INFO  [Log]  
+2016-03-15 18:20:08,300 INFO  [Log] Customer name: mrsi.loris@Lfrm.ca,  
+2016-03-15 18:20:15,537 INFO  [Log] Logout button found on home page 
+2016-03-15 18:20:15,546 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-15 18:21:57,133 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:21:57,133 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC002_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-15 18:21:57,133 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:21:57,280 INFO  [Log] Excel sheet opened 
+2016-03-15 18:22:04,578 INFO  [Log] Web application launched successfully 
+2016-03-15 18:22:04,668 INFO  [Log] Header logo is found 
+2016-03-15 18:22:04,688 INFO  [Log] Mobilize Your Workforce
+Capture / Process / Present / Respond 
+2016-03-15 18:22:04,725 INFO  [Log] Copyright © 2003-2016 Mobile Spectrum LLC. All Rights Reserved. Version: 2.5.2.1 
+2016-03-15 18:22:04,755 INFO  [Log] Copy right image source is 'http://rc25.mforms.us/NewImages/copyright.png' 
+2016-03-15 18:22:04,757 INFO  [Log] Total number of Row used return as < 12 >. 
+2016-03-15 18:22:04,757 INFO  [Log] User: 1 
+2016-03-15 18:22:04,844 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-15 18:22:04,908 INFO  [Log] password '123456' entered 
+2016-03-15 18:22:09,104 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:09,159 INFO  [Log] Top navigations are found on home page 
+2016-03-15 18:22:09,159 INFO  [Log] Logged in user is the super admin 
+2016-03-15 18:22:18,396 INFO  [Log] Logout button found on home page 
+2016-03-15 18:22:18,396 INFO  [Log] User: 2 
+2016-03-15 18:22:19,636 INFO  [Log] User name '' entered 
+2016-03-15 18:22:19,678 INFO  [Log] password '' entered 
+2016-03-15 18:22:19,759 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:39,810 ERROR [Log] Some thing is suspicious here, no validation messages occured 
+2016-03-15 18:22:39,811 INFO  [Log] User: 3 
+2016-03-15 18:22:39,961 INFO  [Log] User name 'pkumari+QC001@astegic.com' entered 
+2016-03-15 18:22:40,026 INFO  [Log] password '123456' entered 
+2016-03-15 18:22:44,296 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:44,345 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-15 18:22:44,345 INFO  [Log] User: 4 
+2016-03-15 18:22:44,423 INFO  [Log] User name 'pkumari+QC002@astegic.com' entered 
+2016-03-15 18:22:44,480 INFO  [Log] password '123456' entered 
+2016-03-15 18:22:45,429 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:45,473 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-15 18:22:45,473 INFO  [Log] User: 5 
+2016-03-15 18:22:45,514 INFO  [Log] User name '' entered 
+2016-03-15 18:22:45,570 INFO  [Log] password 'Astegic1!' entered 
+2016-03-15 18:22:45,645 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:45,674 INFO  [Log] Validation message is 'The User Name field is required.' 
+2016-03-15 18:22:45,674 INFO  [Log] User: 6 
+2016-03-15 18:22:45,782 INFO  [Log] User name 'unregisteredid@gmail.com' entered 
+2016-03-15 18:22:45,825 INFO  [Log] password '' entered 
+2016-03-15 18:22:45,898 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:45,927 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-15 18:22:45,927 INFO  [Log] User: 7 
+2016-03-15 18:22:46,023 INFO  [Log] User name 'unregisteredid@gmail.com' entered 
+2016-03-15 18:22:46,079 INFO  [Log] password '123456' entered 
+2016-03-15 18:22:46,963 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:47,007 INFO  [Log] Validation error is 'You are not a registered user' 
+2016-03-15 18:22:47,007 INFO  [Log] User: 8 
+2016-03-15 18:22:47,068 INFO  [Log] User name 'invalididformat' entered 
+2016-03-15 18:22:47,117 INFO  [Log] password '' entered 
+2016-03-15 18:22:47,191 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:47,219 INFO  [Log] Validation message is 'The User Name field is not a valid e-mail address.' 
+2016-03-15 18:22:47,231 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-15 18:22:47,231 INFO  [Log] User: 9 
+2016-03-15 18:22:47,311 INFO  [Log] User name 'invalididformat' entered 
+2016-03-15 18:22:47,367 INFO  [Log] password '123456' entered 
+2016-03-15 18:22:47,442 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:47,468 INFO  [Log] Validation error is '' 
+2016-03-15 18:22:47,468 INFO  [Log] User: 10 
+2016-03-15 18:22:47,548 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-15 18:22:47,587 INFO  [Log] password '' entered 
+2016-03-15 18:22:47,659 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:47,688 INFO  [Log] Validation message is 'The Password field is required.' 
+2016-03-15 18:22:47,688 INFO  [Log] User: 11 
+2016-03-15 18:22:47,772 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-15 18:22:47,824 INFO  [Log] password '123456' entered 
+2016-03-15 18:22:48,842 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:48,896 INFO  [Log] Validation error is 'Invalid password' 
+2016-03-15 18:22:48,896 INFO  [Log] User: 12 
+2016-03-15 18:22:49,007 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-15 18:22:49,077 INFO  [Log] password 'Astegic1!' entered 
+2016-03-15 18:22:59,692 INFO  [Log] Clicked on login button 
+2016-03-15 18:22:59,780 INFO  [Log] Logged in user is the admin 
+2016-03-15 18:23:09,297 INFO  [Log] Logout button found on home page 
+2016-03-15 18:23:09,301 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-15 18:23:09,605 INFO  [Log] Browser closed 
+2016-03-15 18:23:20,412 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:23:20,412 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC003_ForgotPassword       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-15 18:23:20,412 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:23:27,018 INFO  [Log] Web application launched successfully 
+2016-03-15 18:23:27,349 INFO  [Log] Excel sheet opened 
+2016-03-15 18:23:31,048 INFO  [Log] Password reset link has been sent to your email address 
+2016-03-15 18:23:31,049 INFO  [Log] Password reset link has been sent to your email address 
+2016-03-15 18:23:33,985 INFO  [Log] Total Message:660 
+2016-03-15 18:23:34,362 INFO  [Log] Unread Message:2 
+2016-03-15 18:23:44,272 ERROR [Log] Could not find new mail 
+2016-03-15 18:23:44,278 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-15 18:23:55,547 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:23:55,548 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC004_CreateBlankForm       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-15 18:23:55,548 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:24:01,979 INFO  [Log] Web application launched successfully 
+2016-03-15 18:24:02,121 INFO  [Log] Excel sheet opened 
+2016-03-15 18:24:02,243 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-15 18:24:02,312 INFO  [Log] password 'Astegic1!' entered 
+2016-03-15 18:24:06,011 INFO  [Log] Clicked on login button 
+2016-03-15 18:24:11,017 INFO  [Log] Called all the elements using page factory  
+2016-03-15 18:24:11,025 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-03-15 18:24:11,092 INFO  [Log] Mouse hover on library from navigation menu 
+2016-03-15 18:24:13,053 INFO  [Log] Clicked on Forms in library menu 
+2016-03-15 18:24:25,949 INFO  [Log] Clicked on create new button 
+2016-03-15 18:24:26,178 INFO  [Log] Clicked on Blank form 
+2016-03-15 18:24:29,293 INFO  [Log] Form title: company name770 is entered. 
+2016-03-15 18:24:29,615 INFO  [Log] Form description:Total recnstruction of breast, not otherwise specified is entered 
+2016-03-15 18:24:29,631 INFO  [Log] Created by: vmidha@astegic.com 
+2016-03-15 18:24:29,644 INFO  [Log] Created on: 03/15/2016 
+2016-03-15 18:24:29,655 INFO  [Log] Last Updated on: 03/15/2016 
+2016-03-15 18:24:29,837 INFO  [Log] Clicked on choose theme drop down list 
+2016-03-15 18:24:29,910 INFO  [Log] Theme 'Super admin theme' is selected 
+2016-03-15 18:24:30,019 INFO  [Log] Form activated 
+2016-03-15 18:24:30,027 INFO  [Log] Excel sheet opened 
+2016-03-15 18:24:30,027 INFO  [Log] Total number of Row used return as < 4 >. 
+2016-03-15 18:24:47,751 ERROR [Log] Unable to locate element: {"method":"xpath","selector":"html/body/div[4]/div[3]/div[2]/div/ul/li[1]/input"}
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Deepaksoni', ip: '192.168.1.115', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c58ae345-bac3-4de2-bf8a-66c48bb828d0
+*** Element info: {Using=xpath, value=html/body/div[4]/div[3]/div[2]/div/ul/li[1]/input} 
+2016-03-15 18:24:53,296 INFO  [Log] Logout button found on home page 
+2016-03-15 18:24:53,296 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-15 18:25:13,287 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:25:13,287 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC005_EditForm       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-15 18:25:13,288 INFO  [Log] **************************************************************************************** 
+2016-03-15 18:25:20,208 INFO  [Log] Web application launched successfully 
+2016-03-15 18:25:20,341 INFO  [Log] Excel sheet opened 
+2016-03-15 18:25:20,461 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-03-15 18:25:20,531 INFO  [Log] password 'Astegic1!' entered 
+2016-03-15 18:25:24,366 INFO  [Log] Clicked on login button 
+2016-03-15 18:25:29,371 INFO  [Log] Called all the elements using page factory  
+2016-03-15 18:25:32,576 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-03-15 18:25:32,656 INFO  [Log] Mouse hover on library from navigation menu 
+2016-03-15 18:25:34,454 INFO  [Log] Clicked on Forms in library menu 
+2016-03-15 18:25:47,637 INFO  [Log] Clicked on create new button 
+2016-03-15 18:25:47,863 INFO  [Log] Clicked on Blank form 
+2016-03-15 18:25:51,186 INFO  [Log] Form title: company name770 is entered. 
+2016-03-15 18:25:51,400 INFO  [Log] Form description:Total recnstruction of breast, not otherwise specified is entered 
+2016-03-15 18:25:51,414 INFO  [Log] Created by: vmidha@astegic.com 
+2016-03-15 18:25:51,426 INFO  [Log] Created on: 03/15/2016 
+2016-03-15 18:25:51,437 INFO  [Log] Last Updated on: 03/15/2016 
+2016-03-15 18:25:51,575 INFO  [Log] Clicked on choose theme drop down list 
+2016-03-15 18:25:51,650 INFO  [Log] Theme 'Super admin theme' is selected 
+2016-03-15 18:25:51,737 INFO  [Log] Form activated 
+2016-03-15 18:25:51,746 INFO  [Log] Excel sheet opened 
+2016-03-15 18:25:51,746 INFO  [Log] Total number of Row used return as < 4 >. 
+2016-03-15 18:26:09,242 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : null 
+2016-03-15 18:26:14,777 INFO  [Log] Logout button found on home page 
+2016-03-15 18:26:14,777 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 

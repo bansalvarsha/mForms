@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [mForms]">
-  <test name="TestCasesExecution">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="rc25.mFormsAutomation.Testcases.TC001_Registration"/>
-      <class name="rc25.mFormsAutomation.Testcases.TC002_Login"/>
+      <class name="rc25.mFormsAutomation.Testcases.TC005_EditForm"/>
     </classes>
-  </test> <!-- TestCasesExecution -->
-</suite> <!-- Failed suite [mForms] -->
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="rc25.mFormsAutomation.Testcases.TC005_EditForm">
+        <methods>
+          <include name="main"/>
+          <include name="afterMethod"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- rc25.mFormsAutomation.Testcases.TC005_EditForm -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
