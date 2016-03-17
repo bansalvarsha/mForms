@@ -16,44 +16,63 @@
 
   <dependencies>
   	<dependency>
-  		<groupId>org.seleniumhq.selenium</groupId>
-  		<artifactId>selenium-java</artifactId>
-  		<version>2.52.0</version>
+  			<groupId>org.seleniumhq.selenium</groupId>
+  			<artifactId>selenium-java</artifactId>
+  			<version>2.52.0</version>
   	</dependency>
   	<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>3.14-beta1</version>
-   </dependency>
+	       <groupId>org.apache.poi</groupId>
+ 		   <artifactId>poi-ooxml</artifactId>
+ 		   <version>3.14-beta1</version>
+    </dependency>
 	<dependency>
-		<groupId>log4j</groupId>
-		<artifactId>log4j</artifactId>
-		<version>1.2.17</version>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 	</dependency>
 	<dependency>
-	<groupId>org.apache.maven</groupId>
-	<artifactId>maven-plugin-api</artifactId>
-	<version>3.3.9</version>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>3.3.9</version>
 	</dependency>
 	<dependency>
-		<groupId>org.apache.maven.surefire</groupId>
-		<artifactId>surefire-api</artifactId>
-		<version>2.19.1</version>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.10</version>
 	</dependency>
 	<dependency>
-		<groupId>org.testng</groupId>
-		<artifactId>testng</artifactId>
-		<version>6.9.10</version>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.5.0-b01</version>
 	</dependency>
 	<dependency>
-	<groupId>javax.mail</groupId>
-	<artifactId>mail</artifactId>
-	<version>1.5.0-b01</version>
-</dependency>
-<dependency>
-	<groupId>com.relevantcodes</groupId>
-	<artifactId>extentreports</artifactId>
-	<version>1.41</version>
-</dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>1.41</version>
+	</dependency>
   </dependencies>
+  <build>
+    <plugins>
+        <plugin>
+         	<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.5.1</version>
+			<configuration>
+			<source>1.5</source>
+			<target>1.5</target>
+			</configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.19.1</version>
+            <configuration>
+                <suiteXmlFiles>
+                     <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
+        </plugin>
+    </plugins>
+  </build>
+  
 </project>

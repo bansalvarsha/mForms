@@ -1,1 +1,1 @@
-java -cp "C:\Program Files\Jenkins\workspace\mforms\MForms\bin" org.testng.TestNG testng.xml
+java -cp target;pom.xml org.testng.TestNG testng.xml

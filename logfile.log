@@ -4382,3 +4382,120 @@ Session ID: c58ae345-bac3-4de2-bf8a-66c48bb828d0
 2016-03-15 18:26:09,242 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : null 
 2016-03-15 18:26:14,777 INFO  [Log] Logout button found on home page 
 2016-03-15 18:26:14,777 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-17 17:26:28,023 INFO  [Log] **************************************************************************************** 
+2016-03-17 17:26:28,023 INFO  [Log] **************************************************************************************** 
+2016-03-17 17:26:28,023 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC001_Registration       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-17 17:26:28,023 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC002_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-17 17:26:28,023 INFO  [Log] **************************************************************************************** 
+2016-03-17 17:26:28,023 INFO  [Log] **************************************************************************************** 
+2016-03-17 17:26:28,205 INFO  [Log] Excel sheet opened 
+2016-03-17 17:26:41,049 INFO  [Log] Web application launched successfully 
+2016-03-17 17:26:41,938 INFO  [Log] Excel sheet opened 
+2016-03-17 17:26:41,938 INFO  [Log] Total number of Row used return as < 1 >. 
+2016-03-17 17:26:44,289 INFO  [Log] Web application launched successfully 
+2016-03-17 17:26:44,467 INFO  [Log] Header logo is found 
+2016-03-17 17:26:44,648 INFO  [Log] Mobilize Your Workforce
+Capture / Process / Present / Respond 
+2016-03-17 17:26:44,648 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-17 17:26:44,741 INFO  [Log] password '123456' entered 
+2016-03-17 17:26:44,741 INFO  [Log] Copyright © 2003-2016 Mobile Spectrum LLC. All Rights Reserved. Version: 2.5.2.1 
+2016-03-17 17:26:44,907 INFO  [Log] Copy right image source is 'http://rc25.mforms.us/NewImages/copyright.png' 
+2016-03-17 17:26:44,914 INFO  [Log] Total number of Row used return as < 1 >. 
+2016-03-17 17:26:44,914 INFO  [Log] User: 1 
+2016-03-17 17:26:50,334 INFO  [Log] Clicked on login button 
+2016-03-17 17:26:54,487 INFO  [Log] Clicked on Customers Tab 
+2016-03-17 17:27:03,368 INFO  [Log] Clicked on Create New button to open the registration page 
+2016-03-17 17:27:03,393 INFO  [Log] Excel sheet opened 
+2016-03-17 17:27:08,336 INFO  [Log] Email entered 
+2016-03-17 17:27:08,381 INFO  [Log] password entered 
+2016-03-17 17:27:08,417 INFO  [Log] First name entered 
+2016-03-17 17:27:08,451 INFO  [Log] last name entered 
+2016-03-17 17:27:08,495 INFO  [Log] company name entered 
+2016-03-17 17:27:08,706 INFO  [Log] Industry selected 
+2016-03-17 17:27:10,563 ERROR [Log] Unable to locate element: {"method":"id","selector":"username"}
+Command duration or timeout: 25.50 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Deepaksoni', ip: '192.168.1.115', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 74620d4b-414d-4cba-af49-101bfdc888cd
+*** Element info: {Using=id, value=username} 
+2016-03-17 17:27:10,565 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-17 17:27:10,771 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Deepaksoni', ip: '192.168.1.115', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: driver.version: FirefoxDriver 
+2016-03-17 17:27:11,952 INFO  [Log] Browser closed 
+2016-03-17 17:27:11,954 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-17 17:30:00,446 INFO  [Log] **************************************************************************************** 
+2016-03-17 17:30:00,446 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC001_Registration       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-17 17:30:00,446 INFO  [Log] **************************************************************************************** 
+2016-03-17 17:30:10,434 INFO  [Log] Web application launched successfully 
+2016-03-17 17:30:10,906 INFO  [Log] Excel sheet opened 
+2016-03-17 17:30:10,906 INFO  [Log] Total number of Row used return as < 1 >. 
+2016-03-17 17:30:11,055 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-17 17:30:11,122 INFO  [Log] password '123456' entered 
+2016-03-17 17:30:17,926 INFO  [Log] Clicked on login button 
+2016-03-17 17:30:26,826 INFO  [Log] Clicked on Customers Tab 
+2016-03-17 17:30:30,045 INFO  [Log] Clicked on Create New button to open the registration page 
+2016-03-17 17:30:30,072 INFO  [Log] Excel sheet opened 
+2016-03-17 17:30:36,617 INFO  [Log] Email entered 
+2016-03-17 17:30:36,664 INFO  [Log] password entered 
+2016-03-17 17:30:36,701 INFO  [Log] First name entered 
+2016-03-17 17:30:36,735 INFO  [Log] last name entered 
+2016-03-17 17:30:36,778 INFO  [Log] company name entered 
+2016-03-17 17:30:36,892 INFO  [Log] Industry selected 
+2016-03-17 17:30:39,914 INFO  [Log]  
+2016-03-17 17:30:43,002 INFO  [Log] Customer name: mrsi.loris@Lfrm.ca,  
+2016-03-17 17:30:50,254 INFO  [Log] Logout button found on home page 
+2016-03-17 17:30:50,263 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-17 18:56:55,659 INFO  [Log] **************************************************************************************** 
+2016-03-17 18:56:55,678 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC001_Registration       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-17 18:56:55,678 INFO  [Log] **************************************************************************************** 
+2016-03-17 18:57:07,748 INFO  [Log] Web application launched successfully 
+2016-03-17 18:57:08,244 INFO  [Log] Excel sheet opened 
+2016-03-17 18:57:08,244 INFO  [Log] Total number of Row used return as < 1 >. 
+2016-03-17 18:57:08,643 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-17 18:57:09,247 INFO  [Log] password '123456' entered 
+2016-03-17 18:57:14,461 INFO  [Log] Clicked on login button 
+2016-03-17 18:57:18,573 INFO  [Log] Clicked on Customers Tab 
+2016-03-17 18:57:23,622 INFO  [Log] Clicked on Create New button to open the registration page 
+2016-03-17 18:57:23,651 INFO  [Log] Excel sheet opened 
+2016-03-17 18:57:25,920 INFO  [Log] Email entered 
+2016-03-17 18:57:25,966 INFO  [Log] password entered 
+2016-03-17 18:57:26,002 INFO  [Log] First name entered 
+2016-03-17 18:57:26,038 INFO  [Log] last name entered 
+2016-03-17 18:57:26,082 INFO  [Log] company name entered 
+2016-03-17 18:57:26,281 INFO  [Log] Industry selected 
+2016-03-17 18:57:29,300 INFO  [Log]  
+2016-03-17 18:57:32,398 INFO  [Log] Customer name: mrsi.loris@Lfrm.ca,  
+2016-03-17 18:57:39,634 INFO  [Log] Logout button found on home page 
+2016-03-17 18:57:39,642 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-03-17 19:00:30,658 INFO  [Log] **************************************************************************************** 
+2016-03-17 19:00:30,659 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC001_Registration       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-03-17 19:00:30,659 INFO  [Log] **************************************************************************************** 
+2016-03-17 19:00:38,180 INFO  [Log] Web application launched successfully 
+2016-03-17 19:00:38,563 INFO  [Log] Excel sheet opened 
+2016-03-17 19:00:38,563 INFO  [Log] Total number of Row used return as < 1 >. 
+2016-03-17 19:00:38,694 INFO  [Log] User name 'ckwadhwa@astegic.com' entered 
+2016-03-17 19:00:38,758 INFO  [Log] password '123456' entered 
+2016-03-17 19:00:43,092 INFO  [Log] Clicked on login button 
+2016-03-17 19:00:48,190 INFO  [Log] Clicked on Customers Tab 
+2016-03-17 19:00:51,430 INFO  [Log] Clicked on Create New button to open the registration page 
+2016-03-17 19:00:51,456 INFO  [Log] Excel sheet opened 
+2016-03-17 19:00:53,057 INFO  [Log] Email entered 
+2016-03-17 19:00:53,122 INFO  [Log] password entered 
+2016-03-17 19:00:53,179 INFO  [Log] First name entered 
+2016-03-17 19:00:53,219 INFO  [Log] last name entered 
+2016-03-17 19:00:53,265 INFO  [Log] company name entered 
+2016-03-17 19:00:53,387 INFO  [Log] Industry selected 
+2016-03-17 19:00:56,403 INFO  [Log] Already exist please try with different name ! 
+2016-03-17 19:00:59,579 INFO  [Log] Customer name: mrsi.loris@Lfrm.ca, Already exist please try with different name ! 
+2016-03-17 19:01:08,628 ERROR [Log] Class Utils | Method takeScreenshot | Exception occured while capturing ScreenShot : Error communicating with the remote browser. It may have died.
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Deepaksoni', ip: '192.168.1.115', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: driver.version: FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9683af16-45cb-4d90-80a6-12ec991a97e3 
+2016-03-17 19:01:08,681 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
