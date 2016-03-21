@@ -18,7 +18,7 @@ public class AddItems_objects {
 		return AddNewItem;
 		}
 	
-	@FindBy(how = How.XPATH, using = "html/body/div[4]/div[3]/div[2]/div/ul/li[1]/input") 
+	@FindBy(how = How.XPATH, using = "html/body/div/div/div/div/ul/li[1]/input") //html/body/div[4]/div[3]/div[2]/div/ul/li[1]/input 
 	private WebElement AllTab;
 	public WebElement getAllTab() {
 		return AllTab;
