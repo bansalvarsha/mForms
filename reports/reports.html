@@ -5,7 +5,7 @@
 	Copyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause
 --> 
 	<head>
-		<title>Extent Reports 1.2</title>
+		<title>mForms Automation Testing</title>
 		<link href='http://fonts.googleapis.com/css?family=Nunito:300|Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
 		<link href='http://cdn.rawgit.com/noelboss/featherlight/1.0.4/release/featherlight.min.css' type='text/css' rel='stylesheet' />
@@ -134,7 +134,7 @@
 			.dropdown-menu div { display: inline-block; width: 24px !important; }
 			.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {background-color:transparent; border: 1px solid #c4c8cb; border-bottom-right-radius: 0; border-top-right-radius: 0; font-family: 'Source Sans Pro';font-size:13px;padding: 11px 22px; }
 		</style>
-		<!--%%CUSTOMCSS%%-->
+		<style type='text/css'>th { display: table-cell; }</style><style type='text/css'>.topbar-items-left { display: inline-block; }</style><!--%%CUSTOMCSS%%-->
 	</head>
 	<div id='extent-container'>
 			<div id='header'>
@@ -145,7 +145,7 @@
 								extent-reports
 							</div>
 							<div class='topbar-items-right'>
-								<span class='headline'><!--%%REPORTSUMMARY%%-->Insert a quick summary here (max 70 chars).<!--%%REPORTSUMMARY%%--></span>
+								<span class='headline'><!--%%REPORTSUMMARY%%-->mForms Automation Test Report of Selenium WebDriver<!--%%REPORTSUMMARY%%--></span>
 								<span class='pointer resize expand' title='Resize view by enlarging/compressing tests area. Use this option if you have long test logs and would like to use broader viewing angles for analysis.'><i class='fa fa-expand'></i></span>	
 								<span class='pointer toggle-type' title='Convert Tests-toggles into accordion so only one test can remain open at a time. Turning this open will enable viewing only one test at a time and will close all others for a clean and organized view. Use this open if you intend to analyse only one test at a time.'><i class='fa fa-toggle-off'></i></span>	
 								<span class='pointer expand-tests' title='Expand all tests to view their results. Note: this control only expands tests if the accordion-toggle is not enabled.'><i class='fa fa-bars'></i></span>
@@ -156,7 +156,7 @@
 				</div>
 				<div id='title'>
 					<div class='title'>
-						<div class='logo'><!--%%LOGO%%-->extent-reports<!--%%LOGO%%--></div>
+						<div class='logo'><!--%%LOGO%%-->mForms Automation<!--%%LOGO%%--></div>
 					</div>
 					<div class='menu'>
 						<div class='menu-items'>
@@ -180,7 +180,7 @@
 					<div id='tabs-2'>
 						<div class='summary-items'>
 							<div class='summary-item'>
-								<span class='item-value'><!--%%STARTTIME%%-->03/17 19:00:38<!--%%STARTTIME%%--></span>
+								<span class='item-value'><!--%%STARTTIME%%-->03/28 17:28:38<!--%%STARTTIME%%--></span>
 								<span class='item-name'>Started At</span>
 							</div>
 							<div class='summary-item'>
@@ -196,7 +196,7 @@
 								<span class='item-name'>Tests Failed</span>
 							</div>
 							<div class='summary-item'>
-								<span class='item-value'><!--%%TIMEENDED%%--><!--%%TIMEENDED%%--></span>
+								<span class='item-value'><!--%%TIMEENDED%%-->03/28 17:29:36<!--%%TIMEENDED%%--></span>
 								<span class='item-name'>Ended At</span>
 							</div>
 							<div class='summary-item'>
@@ -221,7 +221,7 @@
 								<span class='item-name'>UserName</span>
 							</div>
 							<div class='summary-item'>
-								<span class='item-value'><!--%%HOSTNAME%%-->Deepaksoni<!--%%HOSTNAME%%--></span>
+								<span class='item-value'><!--%%HOSTNAME%%-->Varsha<!--%%HOSTNAME%%--></span>
 								<span class='item-name'>HostName</span>
 							</div>
 							<div class='summary-item'>
@@ -242,11 +242,11 @@
 
 							</div>
 							<div class='summary-item'>
-								<span class='item-value'><!--%%TOTALMEM%%-->39MB<!--%%TOTALMEM%%--></span>
+								<span class='item-value'><!--%%TOTALMEM%%-->47MB<!--%%TOTALMEM%%--></span>
 								<span class='item-name'>TotalMem</span>
 							</div>
 							<div class='summary-item'>
-								<span class='item-value'><!--%%AVAILMEM%%-->30MB<!--%%AVAILMEM%%--></span>
+								<span class='item-value'><!--%%AVAILMEM%%-->32MB<!--%%AVAILMEM%%--></span>
 								<span class='item-name'>AvailableMem</span>
 							</div>
 						</div>
@@ -283,19 +283,19 @@
 						<div class='test'>
 							<div class='test-header'>
 								<div class='name'>
-									<span>TC001_Registration</span>
+									<span>TC002_Login</span>
 								</div>
 								<div class='test-info'>
-									<span class='startedAt' alt='Test started time' title='Test started time'><i class='fa fa-clock-o'></i>03/17 19:00:38</span>
-									<span class='endedAt' alt='Test ended time' title='Test ended time'><i class='fa fa-clock-o'></i><!--%%TESTENDTIME%%--><!--%%TESTENDTIME%%--></span>
-									<span class='test-status status <!--%%TESTSTATUS%%-->'><!--%%TESTSTATUS%%--></span>
+									<span class='startedAt' alt='Test started time' title='Test started time'><i class='fa fa-clock-o'></i>03/28 17:28:38</span>
+									<span class='endedAt' alt='Test ended time' title='Test ended time'><i class='fa fa-clock-o'></i>03/28 17:29:36</span>
+									<span class='test-status status pass'>pass</span>
 								</div>
 								<!--<div class='test-tooltip'>
 									<span class='toggle-span'><i class='fa fa-circle-thin'></i></span>
 								</div>-->
 								<div class='description' >
 									<span class='description-title'>Description: </span>
-									<span class='description-content'>description</span>
+									<span class='description-content'>Login test to check the login with valid or invalid credentials</span>
 								</div>
 							</div>
 							<div class='exec-info'>
@@ -309,7 +309,28 @@
 										</tr>
 									</thead>
 									<tbody>
-										<!--%%STEP%%-->
+										<tr>
+										<td>17:28:38</td>
+										<td title='PASS' class='status pass'><i class='fa fa-check-circle-o'></i></td>
+										<td class='step-details' colspan='2'>Header logo is found</td>
+									</tr><tr>
+										<td>17:28:38</td>
+										<td title='PASS' class='status pass'><i class='fa fa-check-circle-o'></i></td>
+										<td class='step-details' colspan='2'>Mobilize Your Workforce
+Capture / Process / Present / Respond</td>
+									</tr><tr>
+										<td>17:28:38</td>
+										<td title='PASS' class='status pass'><i class='fa fa-check-circle-o'></i></td>
+										<td class='step-details' colspan='2'>Copyright ? 2003-2016 Mobile Spectrum LLC. All Rights Reserved. Version: 2.5.2.1</td>
+									</tr><tr>
+										<td>17:28:38</td>
+										<td title='PASS' class='status pass'><i class='fa fa-check-circle-o'></i></td>
+										<td class='step-details' colspan='2'>Copy right image source is 'http://rc25.mforms.us/NewImages/copyright.png'</td>
+									</tr><tr>
+										<td>17:29:36</td>
+										<td title='PASS' class='status pass'><i class='fa fa-check-circle-o'></i></td>
+										<td class='step-details' colspan='2'>Script is executed successfully</td>
+									</tr>
 									</tbody>
 								</table>
 							</div>
@@ -319,7 +340,7 @@
 			</div>
 			<div id='footer'>
 				<div class='footer'>
-					<!--%%PROJECTFOOTER%%-->
+					<!--%%PROJECTFOOTER%%--><!--
 					<div id='footer-section-1'>
 						<h4>ExtentReports Library</h4>
 						<ul>
@@ -330,7 +351,7 @@
 							<li><a href='http://relevantcodes.com/extentreports-documentation/'>Documentation</a></span></li>
 						</ul>
 					</div>
-					<!--%%/PROJECTFOOTER%%-->
+					--><!--%%/PROJECTFOOTER%%-->
 				</div>
 			</div>
 		</div>

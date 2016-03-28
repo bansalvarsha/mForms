@@ -2,7 +2,7 @@ package rc25.mFormsAutomation.Testcases;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -87,7 +87,7 @@ public class TC006_CreateFormWithDisplayControls {
 	}
 	
 	
-	@AfterTest
+	@AfterMethod
 	public void afterMethod() throws Exception {
 		Logout_Action.Logout();
 		Log.endTestCase(sTestCaseName);

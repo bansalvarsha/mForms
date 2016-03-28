@@ -149,6 +149,7 @@ public class TC004_CreateBlankForm {
 	
 	@AfterMethod
 	public void afterMethod() throws Exception {
+		Thread.sleep(3000);
 		Logout_Action.Logout();
 		Log.endTestCase(sTestCaseName);
 		driver.close();
