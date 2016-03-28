@@ -46,7 +46,7 @@ public class TC006_CreateFormWithDisplayControls {
 			
 			CreateForm_Action.BlankForm();
 			CreateForm_Action.fillBlankForm(Row);
-			CreateForm_Action.AssignBarcode_And_MasterImage(Row);
+			//CreateForm_Action.AssignBarcode_And_MasterImage(Row); (defect)
 			
 			ExcelUtils.setExcelFile(ExcelPaths.CreateFormWithDisplayControlsDataSheetPath, Constant.ActivationDateSheetName);
 			CreateForm_Action.AddActivationDate(Row);

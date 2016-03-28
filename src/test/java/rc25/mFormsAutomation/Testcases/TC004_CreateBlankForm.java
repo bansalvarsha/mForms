@@ -3,7 +3,7 @@ package rc25.mFormsAutomation.Testcases;
 import org.testng.annotations.Test;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import rc25.mFormsAutomation.Actions_Home.Login_Action;
@@ -147,7 +147,7 @@ public class TC004_CreateBlankForm {
 		}
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void afterMethod() throws Exception {
 		Logout_Action.Logout();
 		Log.endTestCase(sTestCaseName);

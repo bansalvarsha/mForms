@@ -248,7 +248,7 @@ public class CreateLibrary_objects {
 			return change_btn;
 		}
 		
-		@FindBy(how = How.ID, using = "FileUpload1") 
+		@FindBy(how = How.XPATH, using = "//*[@id='FileUpload1']//preceding-sibling::span") 
 		private WebElement Browse_btn;
 		public WebElement getBrowse_btn() {
 			return Browse_btn;

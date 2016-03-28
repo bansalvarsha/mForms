@@ -12,6 +12,7 @@ import rc25.mFormsAutomation.utility.Constant;
 import rc25.mFormsAutomation.utility.DriverUtils;
 import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
+import rc25.mFormsAutomation.utility.Utils;
 
 public class AddDisplayInputType_Action extends BaseClass{
 
@@ -29,6 +30,7 @@ public class AddDisplayInputType_Action extends BaseClass{
 		AddInputTypeInForms_objects.mRow= row;
 		
 		AddInputTypeObj.getInputItem_Audio_DisplayOnly().click();
+		
 		DriverUtils.RequiredChkbox(row);
 		DriverUtils.OpenCommentChkbox(row);
     	
@@ -47,12 +49,14 @@ public class AddDisplayInputType_Action extends BaseClass{
     		new Actions(driver).sendKeys(Keys.ENTER).perform();
     	}
     	Log.info("Input type audio (display only) added");
+    	Utils.Scroll_Down_Page();
 	}
 	
 	public static void Input_Item_Image_DisplayOnly(int row) throws Exception {
 		AddInputTypeInForms_objects.mRow= row;
 		
 		AddInputTypeObj.getInputItem_Image_DisplayOnly().click();
+		
 		String URL= ExcelUtils.getCellData(row, Constant.Col_URL);
 		driver.findElement(By.xpath(AddInputTypeInForms_objects.getTextbox_url())).sendKeys(URL);
       	
@@ -81,7 +85,7 @@ public class AddDisplayInputType_Action extends BaseClass{
       		new Actions(driver).sendKeys(Keys.ENTER).perform();
       	}
       	Log.info("Input type image (display only) added");
-      	
+    	Utils.Scroll_Down_Page();
 	}
 	
 	public static void Input_Item_video_DisplayOnly(int row) throws Exception {
@@ -115,12 +119,14 @@ public class AddDisplayInputType_Action extends BaseClass{
         	new Actions(driver).sendKeys(Keys.ENTER).perform();
         }
         Log.info("Input type video (display only) added");
+        Utils.Scroll_Down_Page();
 	}
 	
 	public static void Input_Item_Hyperlink_DisplayOnly(int row) throws Exception {
 		AddInputTypeInForms_objects.mRow= row;
 		
 		AddInputTypeObj.getInputItem_Hyperlink_DisplayOnly().click();
+		
 		String req= ExcelUtils.getCellData(row, Constant.Col_Required);
 		if(req.equalsIgnoreCase("yes")) {
 			if ( !driver.findElement(By.xpath(AddInputTypeInForms_objects.getRequiredForDiplayControls())).isSelected() ){
@@ -147,12 +153,14 @@ public class AddDisplayInputType_Action extends BaseClass{
 			String InputOption1= ExcelUtils.getCellData(row, Constant.Col_InputOptionColumnsForDsiplay);
 			driver.findElement(By.xpath(AddInputTypeInForms_objects.getInputOption1Loc())).sendKeys(InputOption1);
 			Log.info("Input type hyperlink (display only) added");
+			Utils.Scroll_Down_Page();
 	}
 	
 	public static void Input_Item_map(int row) throws Exception {
 		AddInputTypeInForms_objects.mRow= row;
 		
 		AddInputTypeObj.getInputItem_Map().click();
+		
 		DriverUtils.RequiredChkbox(row);
 		DriverUtils.OpenCommentChkbox(row);
 		
@@ -168,5 +176,6 @@ public class AddDisplayInputType_Action extends BaseClass{
 		String URL= ExcelUtils.getCellData(row, Constant.Col_URL);
 		driver.findElement(By.xpath(AddInputTypeInForms_objects.getTextbox_url())).sendKeys(URL);
 		Log.info("Input type map added");
+		Utils.Scroll_Down_Page();
 	}
 }

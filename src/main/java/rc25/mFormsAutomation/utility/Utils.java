@@ -22,6 +22,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import rc25.mFormsAutomation.OR_Library.AddItems_objects;
 import rc25.mFormsAutomation.OR_Library.SaveAndverifyTheForm_objects;
@@ -126,6 +127,14 @@ public class Utils {
 	//Method to print or log the messages whether data is matched with data sheet or not.
 	public static void VerifyMessages(String getExcelData, String getFormData, int row, String DataMatch, String DataMismatch){
 		//verify the input options values from excel sheet
+		//Assert.assertEquals(getFormData, getExcelData);
+		/*
+		try {
+			Assert.assertEquals(getFormData, getExcelData);
+			} catch (Error e) {
+				verificationErrors.append(e.toString());
+			}*/
+		
     	if(getFormData.equals(getExcelData)){
     		Log.info(DataMatch);
     	}else {
