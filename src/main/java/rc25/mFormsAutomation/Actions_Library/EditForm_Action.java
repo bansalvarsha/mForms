@@ -6,6 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
+
 import rc25.mFormsAutomation.Base.BaseClass;
 import rc25.mFormsAutomation.OR_Library.AddInputTypeInForms_objects;
 import rc25.mFormsAutomation.OR_Library.AddItems_objects;
@@ -189,5 +193,21 @@ public class EditForm_Action extends BaseClass{
 		Log.info("Input type hyperlink display only updated");
 	}
 
+	//use sikuli jar to save the form
+	public static void Save_Form() throws FindFailed {
+		
+		//Create and initialize an instance of Screen object    
+		Screen screen = new Screen();
+
+		//Add image path  
+		Pattern image = new Pattern("./src/test/java/rc25/mFormsAutomation/TestData/save_btn.png");
+		    
+		//Wait 10ms for image  
+		screen.wait(image, 10);
+		    
+		//Click on the image
+		screen.click(image);
+		  
+	}
 
 }

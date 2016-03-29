@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------------------------------------------------------
-<copyright file="Utils.java" company="Astegic Infosoultions" Product= "MForms">
+<copyright file="Utils.java" company="Astegic Info Soft PVT LTD" Product= "MForms">
 Copyright 2015
 </copyright>
 -----------------------------------------------------------------------------------------------------------------------*/
@@ -22,8 +22,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
 import rc25.mFormsAutomation.OR_Library.AddItems_objects;
 import rc25.mFormsAutomation.OR_Library.SaveAndverifyTheForm_objects;
 
@@ -114,8 +112,17 @@ public class Utils {
 	
 	//Scroll the page
 	public static void Scroll_Down_Page() throws AWTException, InterruptedException {
+		AddItems_objects obj= PageFactory.initElements(driver, AddItems_objects.class);
+		
 		JavascriptExecutor je = (JavascriptExecutor) driver;  
-		je.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.xpath("//input[@id='addItemInputBtn_1']")));
+		je.executeScript("arguments[0].scrollIntoView(true);", obj.getAddItemBtn());
+	}
+	
+	public static void Scroll_Up_Page() throws AWTException, InterruptedException {
+		//CreateLibrary_objects obj= PageFactory.initElements(driver, CreateLibrary_objects.class);
+		
+		JavascriptExecutor je = (JavascriptExecutor) driver;  
+		je.executeScript("scroll(0,-250);");
 	}
 	
 	public static void Scroll_Down_To_InputType(int row){
