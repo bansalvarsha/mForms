@@ -20,7 +20,7 @@ import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
 import rc25.mFormsAutomation.utility.Utils;
 
-public class TC014_AddResponse {
+public class TC007_AddResponse {
 	private String sTestCaseName;
 	public WebDriver driver;
 	//private ExtentReports extent= ExtentReports.get(sTestCaseName);
