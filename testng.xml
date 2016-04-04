@@ -11,15 +11,15 @@
       <class name="rc25.mFormsAutomation.Testcases.TC004_CreateBlankForm"/>
 <!--       <class name="rc25.mFormsAutomation.Testcases.TC005_EditForm"/> -->
       <class name="rc25.mFormsAutomation.Testcases.TC006_CreateFormWithDisplayControls"/>
-<!--       <class name="rc25.mFormsAutomation.Testcases.TC007_ViewTheme"/> -->
-<!--       <class name="rc25.mFormsAutomation.Testcases.TC008_EditTheme"/> -->
+<!--       <class name="rc25.mFormsAutomation.Testcases.TC014_AddResponse"/> -->
+      <class name="rc25.mFormsAutomation.Testcases.TC008_AddTheme"/>
+      <class name="rc25.mFormsAutomation.Testcases.TC009_ViewTheme"/>
+      <class name="rc25.mFormsAutomation.Testcases.TC010_EditTheme"/>
+      <class name="rc25.mFormsAutomation.Testcases.TC011_DeleteTheme"/>
 <!--       <class name="rc25.mFormsAutomation.Testcases.TC011_CreateFormItems"/> -->
 <!--       <class name="rc25.mFormsAutomation.Testcases.TC012_CreateInputType"/> -->
 <!--       <class name="rc25.mFormsAutomation.Testcases.TC013_CreateInputOptions"/> -->
-<!--       <class name="rc25.mFormsAutomation.Testcases.TC014_AddResponse"/> -->
 <!--       <class name="rc25.mFormsAutomation.Testcases.TC015_AddUser"/> -->
-
-<!--       <class name="rc25.mFormsAutomation.Testcases.TC0017_AddTheme"/> -->
 
     </classes>
   </test> <!-- Test -->
