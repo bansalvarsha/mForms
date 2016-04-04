@@ -33,6 +33,7 @@ public class TC002_Login {
 	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
+		try{
 		DOMConfigurator.configure("log4j.xml");
 		
 		// Getting the Test Case name, we will get long test case name including package and class name etc.
@@ -63,12 +64,14 @@ public class TC002_Login {
 		extent.config().reportHeadline("mForms Automation Test Report of Selenium WebDriver");
 		extent.config().reportTitle("mForms Automation");
 		extent.config().useExtentFooter(false);
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 
 	@Test
 	public void main() throws Exception{
 		try{
-			
 			//verify the home page/login page content like logo, banner text, copy right text and version number of the application
 			Home_Action.Home_content_Verification();
 			
@@ -99,10 +102,14 @@ public class TC002_Login {
 	
 	@AfterMethod
 	public void afterMethod() {
+		try{
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
 		Log.info("Browser closed");
 		extent.endTest();
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 }

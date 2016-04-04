@@ -26,15 +26,37 @@ public class Theme_Actions extends BaseClass {
 		CreateLibObj= PageFactory.initElements(driver, CreateLibrary_objects.class);
 	}
 	
-	public static void Add_theme(int row) throws Exception {
+	public static void Add_theme(){
+		try {
 		WebElement getChooseThemeDDL= CreateLibObj.getChooseTheme_btn(); 
 		Utils.waitForElementOnvisibilityOf(getChooseThemeDDL);
 		getChooseThemeDDL.click();
 		Log.info("Clicked on choose theme drop down list.");
 		
 		CreateLibObj.getAddTheme().click();
-		CreateLibObj.getThemeName().clear();
+		} catch (Exception e) {
+			e.getMessage();
+		}
+	}
+	
+	public static void Edit_theme(int row) throws Exception {
+		try{
+		WebElement getChooseThemeDDL= CreateLibObj.getChooseTheme_btn(); 
+		Utils.waitForElementOnvisibilityOf(getChooseThemeDDL);
+		getChooseThemeDDL.click();
+		Log.info("Clicked on choose theme drop down list.");
+		
+		driver.findElement(By.xpath(CreateLibrary_objects.ViewOrEdit_Btn(row))).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void UpdateThemeDetails(int row) throws Exception {
+		try{
 		Thread.sleep(2000);
+		CreateLibObj.getThemeName().clear();
+		//Thread.sleep(2000);
 		String ThemeName= ExcelUtils.getCellData(row, Constant.Col_ThemeName);
 		CreateLibObj.getThemeName().sendKeys(ThemeName);
 		
@@ -122,21 +144,16 @@ public class Theme_Actions extends BaseClass {
 		
 		Utils.getConfirmationMessage();
 		
+		Thread.sleep(2000);
 		String verifyNewTheme= CreateLibObj.getChooseThemeSpan().getText();
-		System.out.println("New theme is created which is selected with the name of " + verifyNewTheme);
-	}
-	
-	public static void Edit_theme() throws Exception {
-		WebElement getChooseThemeDDL= CreateLibObj.getChooseTheme_btn(); 
-		Utils.waitForElementOnvisibilityOf(getChooseThemeDDL);
-		
-		getChooseThemeDDL.click();
-		Log.info("Clicked on choose theme drop down list.");
-		
-		
+		System.out.println("Added or updated theme name is= " + verifyNewTheme);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static void View_theme(int row) throws Exception {
+		try{
 		Thread.sleep(2000);
 		WebElement getChooseThemeDDL= CreateLibObj.getChooseTheme_btn(); 
 		Utils.waitForElementOnvisibilityOf(getChooseThemeDDL);
@@ -145,8 +162,9 @@ public class Theme_Actions extends BaseClass {
 		
 		Log.info("Clicked on choose theme drop down list.");
 		
-		driver.findElement(By.xpath(CreateLibrary_objects.View_Btn(row))).click();
-		CreateLibObj.getThemeName();
+		driver.findElement(By.xpath(CreateLibrary_objects.ViewOrEdit_Btn(row))).click();
+		String ThemeName= CreateLibObj.getThemeName().getText();
+		System.out.println("Theme name is= " + ThemeName);
 		
 		Utils.waitForElementOnvisibilityOf(CreateLibObj.getDivBGColor());
 		String getBackGroundColor = CreateLibObj.getDivBGColor().getAttribute("style");
@@ -179,11 +197,29 @@ public class Theme_Actions extends BaseClass {
 		if(matcher4.find()){
 			System.out.println("Button text color is= " + matcher4.group(0));
 		}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
-	
-	public static void Delete_theme() {
+	public static void Delete_theme(int row) throws Exception {
+		try{
+		Thread.sleep(2000);
+		WebElement getChooseThemeDDL= CreateLibObj.getChooseTheme_btn(); 
+		Utils.waitForElementOnvisibilityOf(getChooseThemeDDL);
+		getChooseThemeDDL.click();
+		Log.info("Clicked on choose theme drop down list.");
+		driver.findElement(By.xpath(CreateLibrary_objects.ViewOrEdit_Btn(row))).click();
+		Thread.sleep(2000);
 		
+		CreateLibObj.getDelete_btn().click();
+		String popup_txt= CreateLibObj.getPop_up().getText();
+		System.out.println(popup_txt);
+		CreateLibObj.getpopup_ok().click();
+		Utils.getConfirmationMessage();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

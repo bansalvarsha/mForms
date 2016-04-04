@@ -24,6 +24,7 @@ public class TC015_AddUser {
 	
 	@BeforeMethod
 	public void BeforeMethod() throws Exception {
+		try{
 		DOMConfigurator.configure("log4j.xml");
 	  	sTestCaseName = this.toString();
 	  	sTestCaseName = Utils.getTestCaseName(this.toString());
@@ -32,6 +33,9 @@ public class TC015_AddUser {
 		driver= Utils.OpenBrowser();
 		new BaseClass(driver);
 		//extent.init(Constant.ReportsLocation, false);
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 	
 	@Test
@@ -53,9 +57,13 @@ public class TC015_AddUser {
 	
 	@AfterTest
 	public void afterMethod() {
+		try{
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
 		//extent.endTest();
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 }

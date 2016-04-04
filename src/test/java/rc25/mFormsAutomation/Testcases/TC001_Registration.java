@@ -8,7 +8,6 @@ package rc25.mFormsAutomation.Testcases;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -32,6 +31,7 @@ public class TC001_Registration {
 	
 	@BeforeMethod
 	public void BeforeMethod() throws Exception {
+		try{
 		DOMConfigurator.configure("log4j.xml");
 	  	sTestCaseName = this.toString();
 	  	sTestCaseName = Utils.getTestCaseName(this.toString());
@@ -39,6 +39,9 @@ public class TC001_Registration {
 		driver= Utils.OpenBrowser();
 		new BaseClass(driver);
 		extent.init(Constant.ReportsLocation, true);
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 	
 	//@Test(dataProvider = "dtProvider")
@@ -69,10 +72,14 @@ public class TC001_Registration {
 	
 	@AfterMethod
 	public void afterMethod() {
+		try{
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
 		extent.endTest();
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 	
 	/*@DataProvider(name="dtProvider")

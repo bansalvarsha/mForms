@@ -28,6 +28,7 @@ public class TC004_CreateBlankForm {
 
 	@BeforeMethod
 	public void BeforeMethod() throws Exception {
+		try{
 		DOMConfigurator.configure("log4j.xml");
 	  	sTestCaseName = this.toString();
 	  	sTestCaseName = Utils.getTestCaseName(this.toString());
@@ -36,6 +37,9 @@ public class TC004_CreateBlankForm {
 		driver= Utils.OpenBrowser();
 		new BaseClass(driver);
 		//	extent.init(Constant.ReportsLocation, false);
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 	
 	@Test
@@ -149,12 +153,16 @@ public class TC004_CreateBlankForm {
 	
 	@AfterMethod
 	public void afterMethod() throws Exception {
+		try{
 		Thread.sleep(3000);
 		Logout_Action.Logout();
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
 		//extent.endTest();
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 	
 }	

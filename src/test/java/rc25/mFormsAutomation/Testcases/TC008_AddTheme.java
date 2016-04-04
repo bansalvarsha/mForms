@@ -23,6 +23,7 @@ public class TC008_AddTheme {
 	
 	@BeforeMethod
 	public void BeforeMethod() throws Exception {
+		try{
 		DOMConfigurator.configure("log4j.xml");
 	  	sTestCaseName = this.toString();
 	  	sTestCaseName = Utils.getTestCaseName(this.toString());
@@ -31,6 +32,9 @@ public class TC008_AddTheme {
 		driver= Utils.OpenBrowser();
 		new BaseClass(driver);
 		//extent.init(Constant.ReportsLocation, false);
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 	
 	@Test
@@ -45,7 +49,8 @@ public class TC008_AddTheme {
 			Row++;
 			ExcelUtils.setExcelFile(ExcelPaths.Theme, Constant.AddTheme);
 			Theme_Actions.pageFactory();
-			Theme_Actions.Add_theme(Row);
+			Theme_Actions.Add_theme();
+			Theme_Actions.UpdateThemeDetails(Row);
 		}catch(Exception e){ 
 			Utils.takeScreenshot(driver, sTestCaseName);
 			//extent.attachScreenshot(Constant.ReportsLocation, "Fail");
@@ -56,9 +61,13 @@ public class TC008_AddTheme {
 	
 	@AfterTest
 	public void afterMethod() {
+		try{
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
-	//	extent.endTest();
+		//	extent.endTest();
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 }

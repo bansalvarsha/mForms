@@ -26,6 +26,7 @@ public class TC006_CreateFormWithDisplayControls {
 	
 	@BeforeMethod
 	public void BeforeMethod() throws Exception {
+		try{
 		DOMConfigurator.configure("log4j.xml");
 	  	sTestCaseName = this.toString();
 	  	sTestCaseName = Utils.getTestCaseName(this.toString());
@@ -34,6 +35,9 @@ public class TC006_CreateFormWithDisplayControls {
 		driver= Utils.OpenBrowser();
 		new BaseClass(driver);
 		//extent.init(Constant.ReportsLocation, false);
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 	
 	@Test
@@ -89,10 +93,14 @@ public class TC006_CreateFormWithDisplayControls {
 	
 	@AfterMethod
 	public void afterMethod() throws Exception {
+		try{
 		Logout_Action.Logout();
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
 		//extent.endTest();
+		} catch (Exception e) {
+			Log.error(e.getMessage());
+		}
 	}
 }

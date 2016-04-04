@@ -32,6 +32,7 @@ public class TC005_EditForm {
 		
 		@BeforeMethod
 		public void BeforeMethod() throws Exception {
+			try{
 			DOMConfigurator.configure("log4j.xml");
 		  	sTestCaseName = this.toString();
 		  	sTestCaseName = Utils.getTestCaseName(this.toString());
@@ -39,10 +40,14 @@ public class TC005_EditForm {
 			
 			driver= Utils.OpenBrowser();
 			new BaseClass(driver);
+			} catch (Exception e) {
+				Log.error(e.getMessage());
+			}
 		}
 		
 		@Test
 		public void main() throws Exception{
+			try{
 			TC004_CreateBlankForm createForm= new TC004_CreateBlankForm();
 			createForm.main();
 			ExcelUtils.setExcelFile(ExcelPaths.excelfileForCreateForm, Constant.loginSheetName);
@@ -142,13 +147,20 @@ public class TC005_EditForm {
 			SaveAndverifyTheForm_Action.SaveAndVerify(Row);
 			VerifyFormData_Action.verifyCreatedFormData(Constant.SheetNameForItemEdition);
 			System.out.println(Constant.SheetNameForItemEdition);
+			} catch (Exception e) {
+				Log.error(e.getMessage());
+			}
 		}
 		
 		@AfterMethod
 		public void afterMethod() throws Exception {
+			try{
 			Logout_Action.Logout();
 			Log.endTestCase(sTestCaseName);
 			driver.close();
 			driver.quit();
+			} catch (Exception e) {
+				Log.error(e.getMessage());
+			}
 		}
 }

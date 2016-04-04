@@ -11023,3 +11023,395 @@ Session ID: 4e7c1ca4-7a7a-4fd2-ad50-87b3016bec67
 2016-04-04 14:59:29,131 INFO  [Log] Excel sheet opened 
 2016-04-04 14:59:31,387 INFO  [Log] Clicked on choose theme drop down list. 
 2016-04-04 14:59:32,532 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 16:56:54,454 INFO  [Log] **************************************************************************************** 
+2016-04-04 16:56:54,454 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 16:56:54,454 INFO  [Log] **************************************************************************************** 
+2016-04-04 16:57:03,146 INFO  [Log] Web application launched successfully 
+2016-04-04 16:57:03,592 INFO  [Log] Excel sheet opened 
+2016-04-04 16:57:03,728 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 16:57:03,800 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 16:57:08,141 INFO  [Log] Clicked on login button 
+2016-04-04 16:57:08,148 INFO  [Log] Called all the elements using page factory  
+2016-04-04 16:57:08,160 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 16:57:08,195 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 16:57:08,848 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 16:57:22,391 ERROR [Log] Unable to locate element: {"method":"id","selector":"FormList"}
+Command duration or timeout: 13.26 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Varsha', ip: '192.168.1.65', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 035dae47-c32b-4a19-9468-5fdeede764e7
+*** Element info: {Using=id, value=FormList} 
+2016-04-04 16:57:22,394 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 16:57:44,527 INFO  [Log] **************************************************************************************** 
+2016-04-04 16:57:44,528 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 16:57:44,528 INFO  [Log] **************************************************************************************** 
+2016-04-04 16:57:51,966 INFO  [Log] Web application launched successfully 
+2016-04-04 16:57:52,455 INFO  [Log] Excel sheet opened 
+2016-04-04 16:57:52,589 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 16:57:52,660 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 16:57:56,653 INFO  [Log] Clicked on login button 
+2016-04-04 16:57:56,658 INFO  [Log] Called all the elements using page factory  
+2016-04-04 16:57:56,675 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 16:57:56,737 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 16:57:56,824 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 16:58:13,365 INFO  [Log] Clicked on create new button 
+2016-04-04 16:58:13,705 INFO  [Log] Clicked on Blank form 
+2016-04-04 16:58:15,775 INFO  [Log] Excel sheet opened 
+2016-04-04 16:58:32,684 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:01:59,656 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:01:59,657 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:01:59,657 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:02:08,402 INFO  [Log] Web application launched successfully 
+2016-04-04 17:02:08,838 INFO  [Log] Excel sheet opened 
+2016-04-04 17:02:08,971 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:02:09,045 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:02:13,184 INFO  [Log] Clicked on login button 
+2016-04-04 17:02:13,190 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:02:13,201 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:02:13,231 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:02:13,421 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:02:29,869 INFO  [Log] Clicked on create new button 
+2016-04-04 17:02:30,114 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:02:32,160 INFO  [Log] Excel sheet opened 
+2016-04-04 17:02:32,598 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:02:37,640 INFO  [Log] Excel sheet opened 
+2016-04-04 17:02:37,845 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:02:41,897 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:03:51,118 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:03:51,119 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:03:51,119 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:03:59,064 INFO  [Log] Web application launched successfully 
+2016-04-04 17:03:59,501 INFO  [Log] Excel sheet opened 
+2016-04-04 17:03:59,632 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:03:59,706 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:04:06,142 INFO  [Log] Clicked on login button 
+2016-04-04 17:04:06,150 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:04:06,158 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:04:06,204 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:04:14,575 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:04:28,424 INFO  [Log] Clicked on create new button 
+2016-04-04 17:04:28,665 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:04:30,721 INFO  [Log] Excel sheet opened 
+2016-04-04 17:04:31,280 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:04:36,151 INFO  [Log] Excel sheet opened 
+2016-04-04 17:04:36,347 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:04:40,292 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:09:56,544 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:09:56,545 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:09:56,545 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:10:06,453 INFO  [Log] Web application launched successfully 
+2016-04-04 17:10:06,896 INFO  [Log] Excel sheet opened 
+2016-04-04 17:10:07,027 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:10:07,099 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:10:14,575 INFO  [Log] Clicked on login button 
+2016-04-04 17:10:14,586 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:10:14,602 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:10:14,670 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:10:16,378 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:10:29,474 INFO  [Log] Clicked on create new button 
+2016-04-04 17:10:29,712 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:10:31,770 INFO  [Log] Excel sheet opened 
+2016-04-04 17:10:32,817 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:10:39,366 INFO  [Log] Excel sheet opened 
+2016-04-04 17:10:39,583 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:10:46,349 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:11:09,962 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:11:09,962 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:11:09,962 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:11:17,350 INFO  [Log] Web application launched successfully 
+2016-04-04 17:11:17,839 INFO  [Log] Excel sheet opened 
+2016-04-04 17:11:17,972 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:11:18,043 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:11:22,106 INFO  [Log] Clicked on login button 
+2016-04-04 17:11:22,112 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:11:22,124 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:11:22,164 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:11:25,313 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:11:38,835 INFO  [Log] Clicked on create new button 
+2016-04-04 17:11:39,070 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:11:41,129 INFO  [Log] Excel sheet opened 
+2016-04-04 17:11:48,637 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:18:03,978 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:18:03,978 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:18:03,978 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:18:11,737 INFO  [Log] Web application launched successfully 
+2016-04-04 17:18:12,177 INFO  [Log] Excel sheet opened 
+2016-04-04 17:18:12,313 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:18:12,389 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:18:16,787 INFO  [Log] Clicked on login button 
+2016-04-04 17:18:16,792 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:18:16,806 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:18:16,906 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:18:17,525 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:18:35,394 INFO  [Log] Clicked on create new button 
+2016-04-04 17:18:35,632 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:18:37,691 INFO  [Log] Excel sheet opened 
+2016-04-04 17:18:37,830 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:18:42,722 INFO  [Log] Excel sheet opened 
+2016-04-04 17:18:43,118 ERROR [Log] Element is not clickable at point (227, 302). Other element would receive the click: <div style="width: 1920px; height: 969px; z-index: 1001;" class="ui-widget-overlay"></div>
+Command duration or timeout: 68 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Varsha', ip: '192.168.1.65', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 533d1448-e9d9-406d-ad76-2d75ac814c8e 
+2016-04-04 17:18:43,122 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:19:26,729 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:19:26,730 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:19:26,730 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:19:33,818 INFO  [Log] Web application launched successfully 
+2016-04-04 17:19:34,259 INFO  [Log] Excel sheet opened 
+2016-04-04 17:19:34,392 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:19:34,467 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:19:38,373 INFO  [Log] Clicked on login button 
+2016-04-04 17:19:38,381 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:19:38,390 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:19:38,432 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:19:42,966 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:19:56,416 INFO  [Log] Clicked on create new button 
+2016-04-04 17:19:56,688 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:19:58,741 INFO  [Log] Excel sheet opened 
+2016-04-04 17:19:59,611 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:20:04,208 INFO  [Log] Excel sheet opened 
+2016-04-04 17:20:04,458 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:20:08,374 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:22:24,831 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:22:24,832 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:22:24,832 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:22:47,658 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:22:47,659 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:22:47,659 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:22:55,028 INFO  [Log] Web application launched successfully 
+2016-04-04 17:22:55,467 INFO  [Log] Excel sheet opened 
+2016-04-04 17:22:55,602 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:22:55,677 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:22:59,969 INFO  [Log] Clicked on login button 
+2016-04-04 17:22:59,977 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:22:59,993 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:23:00,028 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:23:04,648 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:23:18,261 INFO  [Log] Clicked on create new button 
+2016-04-04 17:23:18,504 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:23:20,550 INFO  [Log] Excel sheet opened 
+2016-04-04 17:23:21,178 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:23:25,923 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:23:26,098 INFO  [Log] Excel sheet opened 
+2016-04-04 17:23:29,724 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:25:22,331 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:25:22,332 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:25:22,332 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:25:31,753 INFO  [Log] Web application launched successfully 
+2016-04-04 17:25:32,261 INFO  [Log] Excel sheet opened 
+2016-04-04 17:25:32,392 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:25:32,463 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:25:37,429 INFO  [Log] Clicked on login button 
+2016-04-04 17:25:37,436 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:25:37,446 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:25:37,491 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:25:44,081 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:25:58,455 INFO  [Log] Clicked on create new button 
+2016-04-04 17:25:58,732 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:26:00,785 INFO  [Log] Excel sheet opened 
+2016-04-04 17:26:01,338 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:26:11,535 ERROR [Log] Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.03 seconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Varsha', ip: '192.168.1.65', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f113b8f4-d7b1-4744-bf88-e7b8d8031532 
+2016-04-04 17:26:11,539 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:26:22,580 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:26:22,580 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:26:22,580 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:26:32,202 INFO  [Log] Web application launched successfully 
+2016-04-04 17:26:32,646 INFO  [Log] Excel sheet opened 
+2016-04-04 17:26:32,777 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:26:32,848 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:26:41,681 INFO  [Log] Clicked on login button 
+2016-04-04 17:26:41,687 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:26:41,698 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:26:41,730 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:26:42,031 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:27:01,114 INFO  [Log] Clicked on create new button 
+2016-04-04 17:27:01,372 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:27:03,419 INFO  [Log] Excel sheet opened 
+2016-04-04 17:27:05,049 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:27:09,854 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:27:10,020 INFO  [Log] Excel sheet opened 
+2016-04-04 17:27:13,590 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:27:31,054 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:27:31,054 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC010_EditTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:27:31,054 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:27:42,159 INFO  [Log] Web application launched successfully 
+2016-04-04 17:27:42,666 INFO  [Log] Excel sheet opened 
+2016-04-04 17:27:42,807 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:27:42,886 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:28:01,425 INFO  [Log] Clicked on login button 
+2016-04-04 17:28:01,433 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:28:02,052 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:28:02,108 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:28:05,586 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:28:20,055 INFO  [Log] Clicked on create new button 
+2016-04-04 17:28:20,316 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:28:22,353 INFO  [Log] Excel sheet opened 
+2016-04-04 17:28:23,015 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:28:56,554 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:28:57,639 INFO  [Log] Excel sheet opened 
+2016-04-04 17:45:12,764 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:45:12,764 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC011_DeleteTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:45:12,764 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:45:20,762 INFO  [Log] Web application launched successfully 
+2016-04-04 17:45:21,191 INFO  [Log] Excel sheet opened 
+2016-04-04 17:45:21,319 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:45:21,392 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:45:27,314 INFO  [Log] Clicked on login button 
+2016-04-04 17:45:27,320 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:45:27,334 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:45:27,379 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:45:30,610 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:45:44,593 INFO  [Log] Clicked on create new button 
+2016-04-04 17:45:44,854 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:45:46,915 INFO  [Log] Excel sheet opened 
+2016-04-04 17:45:47,586 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:45:54,261 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:45:54,378 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:47:50,887 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:47:50,887 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC011_DeleteTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:47:50,887 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:47:58,500 INFO  [Log] Web application launched successfully 
+2016-04-04 17:47:58,929 INFO  [Log] Excel sheet opened 
+2016-04-04 17:47:59,057 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:47:59,129 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:48:11,197 INFO  [Log] Clicked on login button 
+2016-04-04 17:48:11,203 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:48:11,211 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:48:11,254 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:48:14,140 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:48:27,200 INFO  [Log] Clicked on create new button 
+2016-04-04 17:48:27,456 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:48:29,514 INFO  [Log] Excel sheet opened 
+2016-04-04 17:48:30,702 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:48:39,333 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:48:41,542 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:54:12,913 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:54:12,913 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC011_DeleteTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:54:12,913 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:54:19,684 INFO  [Log] Web application launched successfully 
+2016-04-04 17:54:20,120 INFO  [Log] Excel sheet opened 
+2016-04-04 17:54:20,249 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:54:20,319 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:54:25,137 INFO  [Log] Clicked on login button 
+2016-04-04 17:54:25,143 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:54:25,155 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:54:25,185 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:54:26,465 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:54:42,168 INFO  [Log] Clicked on create new button 
+2016-04-04 17:54:42,444 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:54:44,491 INFO  [Log] Excel sheet opened 
+2016-04-04 17:54:45,606 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:54:54,360 ERROR [Log] Element is not clickable at point (227, 302). Other element would receive the click: <div style="width: 1920px; height: 969px; z-index: 1001;" class="ui-widget-overlay"></div>
+Command duration or timeout: 61 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Varsha', ip: '192.168.1.65', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 194b9c66-ca18-4780-bd23-5557de0744f7 
+2016-04-04 17:54:54,363 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:55:06,748 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:55:06,749 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC011_DeleteTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:55:06,749 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:55:13,505 INFO  [Log] Web application launched successfully 
+2016-04-04 17:55:13,945 INFO  [Log] Excel sheet opened 
+2016-04-04 17:55:14,073 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:55:14,143 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:55:17,820 INFO  [Log] Clicked on login button 
+2016-04-04 17:55:17,827 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:55:17,836 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:55:17,929 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:55:18,514 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:55:35,237 INFO  [Log] Clicked on create new button 
+2016-04-04 17:55:35,477 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:55:37,527 INFO  [Log] Excel sheet opened 
+2016-04-04 17:55:38,167 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:55:46,815 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:55:51,109 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:57:24,625 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:57:24,626 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC011_DeleteTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:57:24,626 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:57:31,837 INFO  [Log] Web application launched successfully 
+2016-04-04 17:57:32,270 INFO  [Log] Excel sheet opened 
+2016-04-04 17:57:32,398 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:57:32,473 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:57:39,729 INFO  [Log] Clicked on login button 
+2016-04-04 17:57:39,736 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:57:39,746 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:57:39,790 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:57:42,081 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:57:55,396 INFO  [Log] Clicked on create new button 
+2016-04-04 17:57:55,637 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:57:57,689 INFO  [Log] Excel sheet opened 
+2016-04-04 17:57:58,366 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:58:07,036 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:58:09,887 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 17:58:49,009 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:58:49,009 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC011_DeleteTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 17:58:49,010 INFO  [Log] **************************************************************************************** 
+2016-04-04 17:58:55,649 INFO  [Log] Web application launched successfully 
+2016-04-04 17:58:56,089 INFO  [Log] Excel sheet opened 
+2016-04-04 17:58:56,214 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 17:58:56,286 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 17:59:00,268 INFO  [Log] Clicked on login button 
+2016-04-04 17:59:00,274 INFO  [Log] Called all the elements using page factory  
+2016-04-04 17:59:00,288 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 17:59:00,333 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 17:59:04,354 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 17:59:17,414 INFO  [Log] Clicked on create new button 
+2016-04-04 17:59:17,693 INFO  [Log] Clicked on Blank form 
+2016-04-04 17:59:19,727 INFO  [Log] Excel sheet opened 
+2016-04-04 17:59:19,860 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 17:59:30,041 ERROR [Log] Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.02 seconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Varsha', ip: '192.168.1.65', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 864220f4-abfa-43c2-996e-59b7c9fcfdf3 
+2016-04-04 17:59:30,044 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 18:01:31,486 INFO  [Log] **************************************************************************************** 
+2016-04-04 18:01:31,486 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC011_DeleteTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 18:01:31,487 INFO  [Log] **************************************************************************************** 
+2016-04-04 18:01:39,695 INFO  [Log] Web application launched successfully 
+2016-04-04 18:01:40,136 INFO  [Log] Excel sheet opened 
+2016-04-04 18:01:40,269 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 18:01:40,342 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 18:01:45,966 INFO  [Log] Clicked on login button 
+2016-04-04 18:01:45,972 INFO  [Log] Called all the elements using page factory  
+2016-04-04 18:01:45,985 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 18:01:46,030 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 18:01:48,109 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 18:02:03,705 INFO  [Log] Clicked on create new button 
+2016-04-04 18:02:03,944 INFO  [Log] Clicked on Blank form 
+2016-04-04 18:02:05,999 INFO  [Log] Excel sheet opened 
+2016-04-04 18:02:06,444 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 18:02:15,155 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-04-04 18:02:55,559 INFO  [Log] **************************************************************************************** 
+2016-04-04 18:02:55,559 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC011_DeleteTheme       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-04-04 18:02:55,560 INFO  [Log] **************************************************************************************** 
+2016-04-04 18:03:02,405 INFO  [Log] Web application launched successfully 
+2016-04-04 18:03:02,829 INFO  [Log] Excel sheet opened 
+2016-04-04 18:03:02,955 INFO  [Log] User name 'vmidha@astegic.com' entered 
+2016-04-04 18:03:03,026 INFO  [Log] password 'Astegic1!' entered 
+2016-04-04 18:03:12,101 INFO  [Log] Clicked on login button 
+2016-04-04 18:03:12,107 INFO  [Log] Called all the elements using page factory  
+2016-04-04 18:03:12,119 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-04-04 18:03:12,170 INFO  [Log] Mouse hover on library from navigation menu 
+2016-04-04 18:03:13,963 INFO  [Log] Clicked on Forms in library menu 
+2016-04-04 18:03:27,049 INFO  [Log] Clicked on create new button 
+2016-04-04 18:03:27,290 INFO  [Log] Clicked on Blank form 
+2016-04-04 18:03:29,339 INFO  [Log] Excel sheet opened 
+2016-04-04 18:03:29,679 INFO  [Log] Clicked on choose theme drop down list. 
+2016-04-04 18:03:38,193 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 

@@ -17,7 +17,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtils {
 
-	private static Sheet sh;
+	public static Sheet sh;
 	private static Workbook wb;
 	private static Cell Cell;
 	private static Row Row;

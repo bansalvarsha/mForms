@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35159" started-at="2016-04-04T09:28:57Z" finished-at="2016-04-04T09:29:32Z">
+  <suite name="Default suite" duration-ms="43058" started-at="2016-04-04T12:32:55Z" finished-at="2016-04-04T12:33:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35159" started-at="2016-04-04T09:28:57Z" finished-at="2016-04-04T09:29:32Z">
-      <class name="rc25.mFormsAutomation.Testcases.TC007_ViewTheme">
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC007_ViewTheme@7f63425a]" name="BeforeMethod" is-config="true" duration-ms="7606" started-at="2016-04-04T14:58:57Z" finished-at="2016-04-04T14:59:05Z">
+    <test name="Default test" duration-ms="43058" started-at="2016-04-04T12:32:55Z" finished-at="2016-04-04T12:33:38Z">
+      <class name="rc25.mFormsAutomation.Testcases.TC011_DeleteTheme">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC011_DeleteTheme@7f63425a]" name="BeforeMethod" is-config="true" duration-ms="6983" started-at="2016-04-04T18:02:55Z" finished-at="2016-04-04T18:03:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="main()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC007_ViewTheme@7f63425a]" name="main" duration-ms="27282" started-at="2016-04-04T14:59:05Z" finished-at="2016-04-04T14:59:32Z">
+        <test-method status="PASS" signature="main()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC011_DeleteTheme@7f63425a]" name="main" duration-ms="35784" started-at="2016-04-04T18:03:02Z" finished-at="2016-04-04T18:03:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC007_ViewTheme@7f63425a]" name="afterMethod" is-config="true" duration-ms="257" started-at="2016-04-04T14:59:32Z" finished-at="2016-04-04T14:59:32Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:rc25.mFormsAutomation.Testcases.TC011_DeleteTheme@7f63425a]" name="afterMethod" is-config="true" duration-ms="274" started-at="2016-04-04T18:03:38Z" finished-at="2016-04-04T18:03:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- rc25.mFormsAutomation.Testcases.TC007_ViewTheme -->
+      </class> <!-- rc25.mFormsAutomation.Testcases.TC011_DeleteTheme -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
