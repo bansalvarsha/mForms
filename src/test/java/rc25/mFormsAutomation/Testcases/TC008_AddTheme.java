@@ -16,7 +16,7 @@ import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
 import rc25.mFormsAutomation.utility.Utils;
 
-public class TC008_EditTheme {
+public class TC008_AddTheme {
 	private String sTestCaseName;
 	public WebDriver driver;
 	//private ExtentReports extent= ExtentReports.get(sTestCaseName);
@@ -59,6 +59,6 @@ public class TC008_EditTheme {
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
-		//extent.endTest();
+	//	extent.endTest();
 	}
 }

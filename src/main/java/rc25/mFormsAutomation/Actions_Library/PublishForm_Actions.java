@@ -42,15 +42,14 @@ public class PublishForm_Actions extends BaseClass {
 			responseObj.getPublish_btn().click();
 			String alert= responseObj.getPopup().getText();
 			String DateAlert= props.getProperty("DateAlert");
+			String PublishForm= props.getProperty("PublishForm");
 			if(alert.equals(DateAlert)){
 				responseObj.getPopup_ok().click();
+				CreateForm_Action.AddActivationDate(row);
+			} else if(alert.equals(PublishForm)){
+				responseObj.getPopup_ok().click();	
 			}
 			
-			CreateForm_Action.AddActivationDate(row);
-			
-			responseObj.getPublish_btn().click();
-			responseObj.getPopup_ok().click();
-		
 			WebElement ConfirmtionMessage= SaveAndverifyObj.getConfirmationMessage();
 			try {
 				Utils.waitForElementOnvisibilityOf(ConfirmtionMessage);

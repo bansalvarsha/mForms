@@ -16,7 +16,8 @@ import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
 import rc25.mFormsAutomation.utility.Utils;
 
-public class TC0017_AddTheme {
+public class TC009_ViewTheme {
+	
 	private String sTestCaseName;
 	public WebDriver driver;
 	//private ExtentReports extent= ExtentReports.get(sTestCaseName);
@@ -42,10 +43,9 @@ public class TC0017_AddTheme {
 			Login_Action.Login_steps(Row);
 			
 			CreateForm_Action.BlankForm();
-			Row++;
-			ExcelUtils.setExcelFile(ExcelPaths.Theme, Constant.AddTheme);
+			ExcelUtils.setExcelFile(ExcelPaths.Theme, Constant.ViewTheme);
 			Theme_Actions.pageFactory();
-			Theme_Actions.Add_theme(Row);
+			Theme_Actions.View_theme(Row);
 		}catch(Exception e){ 
 			Utils.takeScreenshot(driver, sTestCaseName);
 			//extent.attachScreenshot(Constant.ReportsLocation, "Fail");
@@ -59,6 +59,6 @@ public class TC0017_AddTheme {
 		Log.endTestCase(sTestCaseName);
 		driver.close();
 		driver.quit();
-	//	extent.endTest();
+		//extent.endTest();
 	}
 }

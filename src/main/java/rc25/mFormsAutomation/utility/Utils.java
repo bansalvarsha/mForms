@@ -118,12 +118,17 @@ public class Utils {
 		je.executeScript("arguments[0].scrollIntoView(true);", obj.getAddItemBtn());
 	}
 	
-	public static void Scroll_Up_Page() throws AWTException, InterruptedException {
-		//CreateLibrary_objects obj= PageFactory.initElements(driver, CreateLibrary_objects.class);
+	/*public static void Scroll_Up() throws AWTException, InterruptedException {
+		//Scroll automatically to your WebElement:
+		Point hoverItem =driver.findElement(By.xpath("//div[@class='xdsoft_scroller'][@style[contains(.,'height: 86px;')]]")).getLocation();
+		((JavascriptExecutor)driver).executeScript("return window.title;");    
+		Thread.sleep(6000);
+		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,"+(hoverItem.getY())+");"); 
 		
-		JavascriptExecutor je = (JavascriptExecutor) driver;  
-		je.executeScript("scroll(0,-250);");
-	}
+		// Adjust your page view by making changes right over here (hoverItem.getY()-400)
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath("Value')]")));
+
+	}*/
 	
 	public static void Scroll_Down_To_InputType(int row){
 		AddItems_objects.mRow= row;
@@ -134,14 +139,6 @@ public class Utils {
 	//Method to print or log the messages whether data is matched with data sheet or not.
 	public static void VerifyMessages(String getExcelData, String getFormData, int row, String DataMatch, String DataMismatch){
 		//verify the input options values from excel sheet
-		//Assert.assertEquals(getFormData, getExcelData);
-		/*
-		try {
-			Assert.assertEquals(getFormData, getExcelData);
-			} catch (Error e) {
-				verificationErrors.append(e.toString());
-			}*/
-		
     	if(getFormData.equals(getExcelData)){
     		Log.info(DataMatch);
     	}else {

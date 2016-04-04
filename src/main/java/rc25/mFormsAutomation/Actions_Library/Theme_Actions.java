@@ -1,5 +1,8 @@
 package rc25.mFormsAutomation.Actions_Library;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -123,29 +126,59 @@ public class Theme_Actions extends BaseClass {
 		System.out.println("New theme is created which is selected with the name of " + verifyNewTheme);
 	}
 	
-	public static void Edit_theme() {
+	public static void Edit_theme() throws Exception {
+		WebElement getChooseThemeDDL= CreateLibObj.getChooseTheme_btn(); 
+		Utils.waitForElementOnvisibilityOf(getChooseThemeDDL);
+		
+		getChooseThemeDDL.click();
+		Log.info("Clicked on choose theme drop down list.");
+		
 		
 	}
 	
 	public static void View_theme(int row) throws Exception {
-		
+		Thread.sleep(2000);
 		WebElement getChooseThemeDDL= CreateLibObj.getChooseTheme_btn(); 
 		Utils.waitForElementOnvisibilityOf(getChooseThemeDDL);
-		Thread.sleep(2000);
+		
 		getChooseThemeDDL.click();
+		
 		Log.info("Clicked on choose theme drop down list.");
 		
 		driver.findElement(By.xpath(CreateLibrary_objects.View_Btn(row))).click();
 		CreateLibObj.getThemeName();
 		
-		//String[] RGB= CreateLibObj.getDivBGColor().getAttribute("style").split(",");
-		String[] RemoveStartString= CreateLibObj.getDivBGColor().getAttribute("style").split("^(.+?)\\(");
-		String[] RemoveEndString= RemoveStartString[1].split("\\)(.+?)$");
+		Utils.waitForElementOnvisibilityOf(CreateLibObj.getDivBGColor());
+		String getBackGroundColor = CreateLibObj.getDivBGColor().getAttribute("style");
+		Pattern pattern = Pattern.compile("rgb\\((.*?)\\)");
+		Matcher matcher = pattern.matcher(getBackGroundColor);
+		if (matcher.find()){
+		    System.out.println("Background Color is= " + matcher.group(0));
+		}
 		
-		String[] RGB= RemoveEndString[0].split(", ");
-		System.out.println(RGB[0]);
-		System.out.println(RGB[1]);
-		System.out.println(RGB[2]);
+		String getTextColor = CreateLibObj.getDivTextColor().getAttribute("style");
+		Matcher matcher1 = pattern.matcher(getTextColor);
+		if (matcher1.find()){
+		    System.out.println("Text color is= " + matcher1.group(0));
+		}
+		
+		String getLinkColor= CreateLibObj.getDivLinkColor().getAttribute("style");
+		Matcher matcher2= pattern.matcher(getLinkColor);
+		if(matcher2.find()){
+			System.out.println("Link color is= " + matcher2.group(0));
+		}
+		
+		String getBtn_BackgroundColor= CreateLibObj.getDivButtonBGColor().getAttribute("style");
+		Matcher matcher3= pattern.matcher(getBtn_BackgroundColor);
+		if(matcher3.find()){
+			System.out.println("Button back ground color is= " + matcher3.group(0));
+		}
+		
+		String getBtn_TextColor= CreateLibObj.getDivButtonTextColor().getAttribute("style");
+		Matcher matcher4= pattern.matcher(getBtn_TextColor);
+		if(matcher4.find()){
+			System.out.println("Button text color is= " + matcher4.group(0));
+		}
 	}
 
 	

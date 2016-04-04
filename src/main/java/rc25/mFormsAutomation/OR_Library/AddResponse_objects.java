@@ -30,7 +30,7 @@ public class AddResponse_objects {
 	}
 	
 	//Add response attachment objects
-	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'Browse')]") 
+	@FindBy(how = How.XPATH, using = "//div[@class='padd']/div//a[contains(text(), 'Browse')]") 
 	private WebElement Browse_btn;
 	public WebElement getBrowse_btn() {
 		return Browse_btn;
@@ -202,7 +202,7 @@ public class AddResponse_objects {
 		
 	//label objects
 	public static String getLabel() {
-		return "//div[@questionnumber='" + mRow + "']//div[@class='form_ans_area']/label";
+		return "//div[@questionnumber='" + mRow + "']//div[@class='form_ans_area']/pre";
 	}
 	
 	//multi select object
@@ -274,12 +274,30 @@ public class AddResponse_objects {
 		return ScrollPrevious;
 	}
 	
+	@FindBy(how = How.XPATH, using = "//div[@class='xdsoft_select xdsoft_monthselect xdsoft_scroller_box'][@style='display: block;']//div[@data-value='0']") 
+	private WebElement SMonth;
+	public WebElement getSMonth() {
+		return SMonth;
+	}
+	
+	@FindBy(how = How.XPATH, using = "//div[@class='xdsoft_select xdsoft_yearselect xdsoft_scroller_box'][@style='display: block;']//div[@data-value='1950']") 
+	private WebElement SYear;
+	public WebElement getYear() {
+		return SYear;
+	}
+	
+	
+	
 	public static String getBarCode_btn(){
 		return "//div[@questionnumber='" + mRow + "']//input[@value='Scan Barcode']";
 	}
 	
 	public static String getGeoStamp(){
 		return "//div[@questionnumber='" + mRow + "']//input[@value='Get Location']";
+	}
+	
+	public static String getGeoTextarea(){
+		return "//div[@questionnumber='" + mRow + "']//div[@class='form_ans_area']//textarea";
 	}
 	
 	public static String GeoStamplocation(){

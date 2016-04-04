@@ -24,7 +24,7 @@ import rc25.mFormsAutomation.utility.ExcelUtils;
 import rc25.mFormsAutomation.utility.Log;
 import rc25.mFormsAutomation.utility.Utils;
 
-public class TC011_CreateFormItems {
+public class TC016_CreateFormItems {
 
 	private String sTestCaseName;
 	public WebDriver driver;

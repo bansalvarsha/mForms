@@ -2,6 +2,7 @@ package rc25.mFormsAutomation.Actions_Library;
 
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -32,15 +33,51 @@ public class AddResponseQuestionType_Actions extends BaseClass{
 		//response on input type date
 		responseObj.getAddRespOnDate().click();
 		responseObj.getSelectMonth().click();
-		WebElement Month= driver.findElement(By.xpath(AddResponse_objects.getMonthFromAddResponsePage(row)));
-		Month.click();
+		driver.findElement(By.xpath(AddResponse_objects.getMonthFromAddResponsePage(row))).click();
+		//select month from the list
+		/*try{
+		WebElement month= driver.findElement(By.xpath(AddResponse_objects.getMonthFromAddResponsePage(row)));
+		WebElement SMonth= responseObj.getSMonth();
+		while(!SMonth.isDisplayed()){
+			Utils.Scroll_Up();
+		}
+		
+		while(!month.isDisplayed()){
+			WebElement scrollBar= driver.findElement(By.xpath("//div[@class='xdsoft_scroller'][@style[contains(.,'height: 86px;')]]"));
+			JavascriptExecutor je = (JavascriptExecutor) driver;  
+			je.executeScript("arguments[0].scrollIntoView(true);", scrollBar);
+		}
+		month.click();
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+			System.out.println("Given month in data sheet is not present in the list.");
+		}*/
 		
 		responseObj.getSelectYear().click();
-		WebElement Year= driver.findElement(By.xpath(AddResponse_objects.getYearFromAddResponsePage(row)));
-		Year.click();
-		
-		WebElement Date= driver.findElement(By.xpath(AddResponse_objects.getDateFromAddResponsePage(row)));
-		Date.click();
+		driver.findElement(By.xpath(AddResponse_objects.getYearFromAddResponsePage(row))).click();
+		//select year from the list
+		/*try{
+			WebElement year= driver.findElement(By.xpath(AddResponse_objects.getYearFromAddResponsePage(row)));
+			WebElement SYear= responseObj.getYear();
+			while(!SYear.isDisplayed()){
+				WebElement scrollBar= driver.findElement(By.xpath("//div[@class='xdsoft_scroller'][@style[contains(.,'height: 10px;')]]"));
+				JavascriptExecutor je = (JavascriptExecutor) driver;  
+				je.executeScript("arguments[0].scrollIntoView(true);", scrollBar);
+			}
+			
+			while(!year.isDisplayed()){
+				WebElement scrollBar= driver.findElement(By.xpath("//div[@class='xdsoft_scroller'][@style[contains(.,'height: 10px;')]]"));
+				JavascriptExecutor je = (JavascriptExecutor) driver;  
+				je.executeScript("arguments[0].scrollIntoView(true);", scrollBar);
+			}
+			year.click();
+		} catch(Exception e){
+			System.out.println(e.getMessage());
+			System.out.println("Given year in data sheet is not present in the list.");
+		}*/
+	
+		//select date from the calendar
+		driver.findElement(By.xpath(AddResponse_objects.getDateFromAddResponsePage(row))).click();
 		DriverUtils.Remarks(row);
 	}
 	
@@ -56,7 +93,7 @@ public class AddResponseQuestionType_Actions extends BaseClass{
 		
 		driver.findElement(By.xpath(AddResponse_objects.getDateFromAddResponsePage(row))).click();
 		
-	//	try{
+		try{
 			WebElement time= driver.findElement(By.xpath(AddResponse_objects.SelectTime(row)));
 			
 			WebElement STime= responseObj.getSTime();
@@ -68,15 +105,21 @@ public class AddResponseQuestionType_Actions extends BaseClass{
 				responseObj.getScrollNext().click();
 			}
 			time.click();
-		//} catch(NotFoundException | ElementNotVisibleException e){
-		//	System.out.println("Given time in data sheet is not present in the list.");
-	//	}
+		} catch(Exception e){
+			System.out.println("Given time in data sheet is not present in the list.");
+		}
 		DriverUtils.Remarks(row);
 	}
 	
 	public static void AddRespOn_Attachment(int row) throws Exception {
 		AddResponse_objects.mRow= row;
 		//Add response of the form
+		Thread.sleep(2000);
+		
+		//scroll down
+		JavascriptExecutor je = (JavascriptExecutor) driver;  
+		je.executeScript("window.scrollBy(0,250)", "");
+		
 		 responseObj.getBrowse_btn().click();
 		 Runtime.getRuntime().exec(Constant.ImagePath);
 		 Thread.sleep(3000);
@@ -239,9 +282,11 @@ public class AddResponseQuestionType_Actions extends BaseClass{
 	
 	public static void AddRespOn_GeoStamp(int row) throws Exception{
 		AddResponse_objects.mRow= row;
-		driver.findElement(By.xpath(AddResponse_objects.getGeoStamp())).click();
-		String location= driver.findElement(By.xpath(AddResponse_objects.GeoStamplocation())).getAttribute("value");
-		System.out.println("Location coordinates are: " + location);
+		String getAddress= ExcelUtils.getCellData(row, Constant.col_Text);
+		driver.findElement(By.xpath(AddResponse_objects.getGeoTextarea())).sendKeys(getAddress);
+		//driver.findElement(By.xpath(AddResponse_objects.getGeoStamp())).click();
+		//String location= driver.findElement(By.xpath(AddResponse_objects.GeoStamplocation())).getAttribute("value");
+		//System.out.println("Location coordinates are: " + location);
 		DriverUtils.Remarks(row);
 	}
 	
@@ -262,6 +307,7 @@ public class AddResponseQuestionType_Actions extends BaseClass{
 	public static void AddRespOn_SketchPad(int row) throws Exception {
 		AddResponse_objects.mRow= row;
 		driver.findElement(By.xpath(AddResponse_objects.getSketchPad())).click();
+		
 		Runtime.getRuntime().exec(Constant.ImagePath);
 		Thread.sleep(2000);
 		
