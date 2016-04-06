@@ -33,6 +33,7 @@ public class SaveAndverifyTheForm_Action extends BaseClass {
 	static String AddedItemName;
 	static WebElement getRecordInTheList;
 	static boolean save_btn = false;
+	static boolean EditFormPopup= false;
 	 
 		
 	//Method to save the form
@@ -52,7 +53,7 @@ public class SaveAndverifyTheForm_Action extends BaseClass {
 		 SaveAndverifyObj.getsave_btn().click();
 		 Log.info("Clicked on save button");*/
 		 
-		 
+		
 		 
 	      try{
 	    	  save_btn = SaveAndverifyObj.getSaveForm_btn().isDisplayed();
@@ -86,36 +87,22 @@ public class SaveAndverifyTheForm_Action extends BaseClass {
 				 Log.info(getConfirmtionMessage);
 				  getRecordInTheList= SaveAndverifyObj.getRecordInTheList();
 				 if (getRecordInTheList.isDisplayed()){
-					 
-					 if(libraryName.toLowerCase().equals("forms library")){
+					 if(libraryName.toLowerCase().equals("forms library"))
 						 getFormCount_and_NewFormName();
-					 
-					 } else if(libraryName.toLowerCase().equals("input types library")){
-						 AddedItemName= SaveAndverifyObj.getInputTypeName().getText();
-						 Log.info("Recently added Input type name= " + AddedItemName);
-						 System.out.println("Recently added Input type name= " + AddedItemName);
-					
-					 } else if(libraryName.toLowerCase().equals("item library")){
-						 AddedItemName= SaveAndverifyObj.getItemName().getText();
-						 Log.info("Recently added Form Item name= " + AddedItemName);
-						 System.out.println("Recently added Form Item name= " + AddedItemName);
-					
-					 } else if(libraryName.toLowerCase().equals("input options library")){
-						 AddedItemName= SaveAndverifyObj.getIOptionname().getText();
-						 Log.info("input option name= " + AddedItemName);
-			    		System.out.println("input option name= " + AddedItemName);
-					 }
+					 else if(libraryName.toLowerCase().equals("input types library"))
+						 getInputTypeCount_and_NewInputTypeName();
+					 else if(libraryName.toLowerCase().equals("item library"))
+						 getFormItemCount_and_NewFormItemName();
+					 else if(libraryName.toLowerCase().equals("input options library"))
+						 getInputOptionsCount_and_NewInputOptionName();
 					 
 					 String ItemNameFromExcelFile= ExcelUtils.getCellData(row, Constant.Col_FormName);
 					 System.out.println("Item name in data sheet (Excel)= " + ItemNameFromExcelFile);
 					 Log.info("Item name in data sheet (Excel)= " + ItemNameFromExcelFile);
-					 
 					 if(AddedItemName.equals(ItemNameFromExcelFile)){
 						 Log.info(AddedItemName + " is available on the" + libraryName + "listing page.");
 					 } else Log.info("Newly created item's name is not matched with data sheet item's name");
-				 
 				 }else Log.info("Record is not found in the items list.");
-			 
 			 } else Log.info(getConfirmtionMessage);
 		 }else { 
 			 Log.info("No confirmation message is found"); 
@@ -124,23 +111,31 @@ public class SaveAndverifyTheForm_Action extends BaseClass {
 	 }
 	
 	static void EditFormPopup(){
-		boolean popup = false; 
-		if(!CreateForm_Action.getFormNameValue.equals("")){
-			try{
-				popup = driver.findElement(By.id("popup_container")).isDisplayed();
-				popup= true;
-			} catch(Exception nsee){
-				nsee.getStackTrace();
-				popup= false;
+		try{
+			if(EditFormPopup= CreateLibObj.getForm_Name().isDisplayed()){
+				EditFormPopup= true;
+				boolean popup = false; 
+				if(CreateLibObj.getForm_Name().isDisplayed()){
+					if(!CreateForm_Action.getFormNameValue.equals("")){
+						try{
+							popup = driver.findElement(By.id("popup_container")).isDisplayed();
+							popup= true;
+						} catch(Exception nsee){
+							nsee.getStackTrace();
+							popup= false;
+						}
+						if(popup){
+							driver.findElement(By.id("popup_ok")).click();
+						}
+					}
+				}
 			}
-			if(popup){
-				driver.findElement(By.id("popup_ok")).click();
-			}
+		}catch(Exception e){
+			e.getMessage();
 		}
 	}
 	
 	static void getFormCount_and_NewFormName(){
-		if( CreateLibObj.getFormList().isDisplayed()){
 			 int Total_Forms_Count_after_Form_Creation= CreateLibObj.getAllForms().size();//get forms count
 			 System.out.println("After adding a form, total number of forms are " + Total_Forms_Count_after_Form_Creation);
 			 if(Total_Forms_Count_after_Form_Creation>CreateForm_Action.TotalFormsCount){
@@ -148,7 +143,25 @@ public class SaveAndverifyTheForm_Action extends BaseClass {
 				 Log.info("Recently added Form name= " + AddedItemName);
 				 System.out.println("Recently added Form name= " + AddedItemName);	 
 			 }
-		 }
 	}
+	
+	static void getInputTypeCount_and_NewInputTypeName(){
+		AddedItemName= SaveAndverifyObj.getInputTypeName().getText();
+		 Log.info("Recently added Input type name= " + AddedItemName);
+		 System.out.println("Recently added Input type name= " + AddedItemName);
+	}
+	
+	static void getFormItemCount_and_NewFormItemName(){
+		AddedItemName= SaveAndverifyObj.getItemName().getText();
+		 Log.info("Recently added Form Item name= " + AddedItemName);
+		 System.out.println("Recently added Form Item name= " + AddedItemName);
+	}
+	
+	static void getInputOptionsCount_and_NewInputOptionName(){
+		 AddedItemName= SaveAndverifyObj.getIOptionname().getText();
+		 Log.info("input option name= " + AddedItemName);
+		System.out.println("input option name= " + AddedItemName);
+	}
+	
 	
 }

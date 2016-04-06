@@ -3,7 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="rc25.mFormsAutomation.Testcases.TC011_DeleteTheme"/>
+      <class name="rc25.mFormsAutomation.Testcases.TC012_CreateInputType"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="rc25.mFormsAutomation.Testcases.TC012_CreateInputType">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="main"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- rc25.mFormsAutomation.Testcases.TC012_CreateInputType -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
