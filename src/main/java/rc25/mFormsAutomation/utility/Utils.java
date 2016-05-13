@@ -1,8 +1,3 @@
-/*---------------------------------------------------------------------------------------------------------------------
-<copyright file="Utils.java" company="Astegic Info Soft PVT LTD" Product= "MForms">
-Copyright 2015
-</copyright>
------------------------------------------------------------------------------------------------------------------------*/
 package rc25.mFormsAutomation.utility;
 
 import java.awt.AWTException;
