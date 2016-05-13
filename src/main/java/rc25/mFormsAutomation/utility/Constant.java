@@ -1,8 +1,3 @@
-/*---------------------------------------------------------------------------------------------------------------------
-<copyright file="Constant.java" company="Astegic Info solutions" Product= "MForms">
-Copyright 2015
-</copyright>
------------------------------------------------------------------------------------------------------------------------*/
 package rc25.mFormsAutomation.utility;
 
 public class Constant {
