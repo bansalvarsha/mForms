@@ -1,8 +1,3 @@
-/*---------------------------------------------------------------------------------------------------------------------
-<copyright file="TC007_AddResponse.java" company="Astegic Info solutions" Product= "MForms">
-Copyright 2016
-</copyright>
------------------------------------------------------------------------------------------------------------------------*/
 package rc25.mFormsAutomation.Testcases;
 
 import org.apache.log4j.xml.DOMConfigurator;
