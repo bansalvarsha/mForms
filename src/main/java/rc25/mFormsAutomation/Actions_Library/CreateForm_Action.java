@@ -1,9 +1,3 @@
-/*---------------------------------------------------------------------------------------------------------------------
-<copyright file="CreateForm_Action.java" company="Astegic Info solutions" Product= "MForms">
-Copyright 2015
-</copyright>
------------------------------------------------------------------------------------------------------------------------*/
-
 package rc25.mFormsAutomation.Actions_Library;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
