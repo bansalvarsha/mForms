@@ -1,8 +1,3 @@
-/*---------------------------------------------------------------------------------------------------------------------
-<copyright file="Login_Action.java" company="Astegic Info solutions" Product= "MForms">
-Copyright 2015
-</copyright>
------------------------------------------------------------------------------------------------------------------------*/
 package rc25.mFormsAutomation.Actions_Home;
 
 import org.openqa.selenium.WebDriver;
