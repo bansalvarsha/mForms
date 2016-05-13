@@ -1,8 +1,3 @@
-/*---------------------------------------------------------------------------------------------------------------------
-<copyright file="TC011_CreateFormItems.java" company="Astegic Info solutions" Product= "MForms">
-Copyright 2015
-</copyright>
------------------------------------------------------------------------------------------------------------------------*/
 package rc25.mFormsAutomation.Testcases;
 
 import org.apache.log4j.xml.DOMConfigurator;
