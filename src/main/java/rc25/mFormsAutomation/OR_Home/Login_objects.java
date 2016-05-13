@@ -1,8 +1,3 @@
-/*---------------------------------------------------------------------------------------------------------------------
-<copyright file="Login_objects.java" company="Astegic Infosoultions" Product= "MForms">
-Copyright 2015
-</copyright>
------------------------------------------------------------------------------------------------------------------------*/
 package rc25.mFormsAutomation.OR_Home;
 
 import java.util.List;
